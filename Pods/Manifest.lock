@@ -1,0 +1,85 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - BaiduMapKit (2.10.2)
+  - DFCommon (1.4.1):
+    - AFNetworking (~> 2.6.0)
+    - FMDB (~> 2.5)
+    - MBProgressHUD (~> 0.9.1)
+    - MJPhotoBrowser (~> 1.0.2)
+    - MJRefresh (~> 2.4.11)
+    - MLLabel (~> 1.7)
+    - MMPopupView
+    - ODRefreshControl (~> 1.2)
+    - SDWebImage (~> 3.7.3)
+    - TZImagePickerController
+  - FMDB (2.6):
+    - FMDB/standard (= 2.6)
+  - FMDB/standard (2.6)
+  - Masonry (0.6.4)
+  - MBProgressHUD (0.9.2)
+  - MJPhotoBrowser (1.0.2):
+    - SDWebImage
+    - SVProgressHUD
+    - YLGIFImage
+  - MJRefresh (2.4.12)
+  - MLLabel (1.9.0)
+  - MMPopupView (1.6):
+    - Masonry
+  - ODRefreshControl (1.2)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
+  - SVProgressHUD (1.1.3)
+  - TZImagePickerController (1.1.1)
+  - UMengAnalytics-NO-IDFA (3.6.7)
+  - UMengSocial (5.0)
+  - YLGIFImage (0.11)
+
+DEPENDENCIES:
+  - BaiduMapKit
+  - DFCommon
+  - UMengAnalytics-NO-IDFA
+  - UMengSocial
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  BaiduMapKit: b1706a062597c70ec62a0cca93212cba1d3017e1
+  DFCommon: f384ed3be72d6f067c82413eaeb220413ffedfd8
+  FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJPhotoBrowser: f55e8490231f44a78ca6455105a1c798a142c95f
+  MJRefresh: ca8e9589895977df32d379d46e6b8a5450b3ff44
+  MLLabel: 9d4575d4bcf686462eeaf29c1990988f748f85fd
+  MMPopupView: 49c06ca9600256baf263ee5e67d97334735db262
+  ODRefreshControl: 907e6149d72dde488d5917ccfabee5bd8d711a20
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+  TZImagePickerController: bcd8928e5d8a2f7f4e295b9175d72de26834983d
+  UMengAnalytics-NO-IDFA: 6d02561a00579b2e37718f204eb81347df5d7b8b
+  UMengSocial: 48b67179c492a8cf7803fbb0438b8f55432e2fc1
+  YLGIFImage: c0ae132fe80e5282b2762a97d14e23ba71a748ae
+
+PODFILE CHECKSUM: 8dbcedfafb7d8916d08c259086e833b8f222bbeb
+
+COCOAPODS: 1.0.0.beta.5

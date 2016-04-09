@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Baby_ResetViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reset_Bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="oMJ-WP-U2C">
+                    <rect key="frame" x="24" y="115" width="272" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="69b-jY-aIA"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入您的手机号" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gIE-q1-OTn">
+                    <rect key="frame" x="53" y="115" width="130" height="59"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="59" id="LbP-Fi-o7Z"/>
+                        <constraint firstAttribute="width" constant="130" id="PRn-eF-1Fl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入您收到的短信验证码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="JUD-dU-RkB">
+                    <rect key="frame" x="53" y="176" width="215" height="59"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="59" id="1dW-io-K3a"/>
+                        <constraint firstAttribute="width" constant="215" id="C8k-aQ-vrk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNo-6S-G2y">
+                    <rect key="frame" x="23" y="280" width="272" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="gwU-Gr-KjC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="下一步" backgroundImage="Reset_Next.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyl-Wi-zL1">
+                    <rect key="frame" x="188" y="125" width="100" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ZVb-wa-gAs"/>
+                        <constraint firstAttribute="width" constant="100" id="fFe-87-I7T"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                    <state key="normal" title="短信验证" backgroundImage="Reset_Btn.png">
+                        <color key="titleColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gIE-q1-OTn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="115" id="3fL-yd-3DA"/>
+                <constraint firstAttribute="trailing" secondItem="zyl-Wi-zL1" secondAttribute="trailing" constant="32" id="8m6-Fx-WMm"/>
+                <constraint firstItem="oMJ-WP-U2C" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="115" id="ADD-Ke-3OS"/>
+                <constraint firstItem="MNo-6S-G2y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="23" id="DMg-J3-UWE"/>
+                <constraint firstItem="oMJ-WP-U2C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="Dj3-9G-xBj"/>
+                <constraint firstItem="JUD-dU-RkB" firstAttribute="top" secondItem="gIE-q1-OTn" secondAttribute="bottom" constant="2" id="EnJ-Lh-pSf"/>
+                <constraint firstAttribute="trailing" secondItem="oMJ-WP-U2C" secondAttribute="trailing" constant="24" id="U4R-4j-sAK"/>
+                <constraint firstItem="gIE-q1-OTn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="53" id="Vcb-Ms-2Qt"/>
+                <constraint firstAttribute="trailing" secondItem="MNo-6S-G2y" secondAttribute="trailing" constant="25" id="Vrm-KZ-yZj"/>
+                <constraint firstItem="MNo-6S-G2y" firstAttribute="top" secondItem="JUD-dU-RkB" secondAttribute="bottom" constant="45" id="ZCu-vN-lTH"/>
+                <constraint firstItem="zyl-Wi-zL1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="125" id="b47-ne-JNh"/>
+                <constraint firstItem="JUD-dU-RkB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="53" id="mUm-VS-gkn"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Reset_Bg.png" width="673" height="243"/>
+        <image name="Reset_Btn.png" width="262" height="86"/>
+        <image name="Reset_Next.png" width="667" height="96"/>
+    </resources>
+</document>
