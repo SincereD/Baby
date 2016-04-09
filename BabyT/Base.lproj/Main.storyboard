@@ -54,7 +54,7 @@
                             <constraint firstItem="cQm-iN-2OC" firstAttribute="top" secondItem="8Na-zi-hy7" secondAttribute="bottom" constant="-64" id="vo9-47-Kcl"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" selectedImage="bar_ExploreSelected.png" systemItem="search" id="Qbh-Rg-h9S"/>
+                    <tabBarItem key="tabBarItem" title="发现" image="bar_ExploreDefault.png" selectedImage="bar_ExploreSelected.png" id="Qbh-Rg-h9S"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="expTableView" destination="cQm-iN-2OC" id="Ahy-zf-L8M"/>
@@ -177,7 +177,7 @@
                             <constraint firstItem="HGh-76-SjL" firstAttribute="leading" secondItem="WYF-Mt-fjX" secondAttribute="leadingMargin" constant="-20" id="ikS-VC-6kS"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" selectedImage="bar_MeSelected.png" systemItem="contacts" id="5pe-Ev-pyG">
+                    <tabBarItem key="tabBarItem" title="我的" image="bar_MeDefault.png" selectedImage="bar_MeSelected.png" id="5pe-Ev-pyG">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -206,6 +206,14 @@
                                 <state key="normal" title="登陆注册"/>
                                 <connections>
                                     <action selector="showLoginRegisterVC:" destination="WxM-g2-yr9" eventType="touchUpInside" id="7zu-tf-UTO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3l-fH-asv">
+                                <rect key="frame" x="89" y="240" width="66" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="添加信息"/>
+                                <connections>
+                                    <action selector="showBabyInfo:" destination="WxM-g2-yr9" eventType="touchUpInside" id="kcH-Gc-HYu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -268,11 +276,13 @@
         <image name="Bubble_orange.png" width="560" height="556"/>
         <image name="Bubble_purple.png" width="560" height="556"/>
         <image name="Bubble_yellow.png" width="560" height="556"/>
-        <image name="bar_BookDefault.png" width="30" height="30"/>
-        <image name="bar_BookSelected.png" width="30" height="30"/>
-        <image name="bar_ExploreSelected.png" width="30" height="30"/>
-        <image name="bar_HeartDefault.png" width="30" height="30"/>
-        <image name="bar_HeartSelected.png" width="30" height="30"/>
-        <image name="bar_MeSelected.png" width="30" height="30"/>
+        <image name="bar_BookDefault.png" width="28" height="28"/>
+        <image name="bar_BookSelected.png" width="28" height="28"/>
+        <image name="bar_ExploreDefault.png" width="28" height="28"/>
+        <image name="bar_ExploreSelected.png" width="28" height="28"/>
+        <image name="bar_HeartDefault.png" width="28" height="28"/>
+        <image name="bar_HeartSelected.png" width="28" height="28"/>
+        <image name="bar_MeDefault.png" width="28" height="28"/>
+        <image name="bar_MeSelected.png" width="28" height="28"/>
     </resources>
 </document>

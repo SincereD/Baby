@@ -9,6 +9,9 @@
 #import "Baby_PersonalInfoViewController.h"
 
 @interface Baby_PersonalInfoViewController ()<UITableViewDataSource,UITableViewDelegate>
+{
+    NSArray * _cellName;
+}
 
 @end
 
@@ -23,14 +26,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _cellName = @[@"宝贝信息",@"照片管理",@"意见反馈",@"关于我们"];
 }
 
 # pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    if (section == 1)
+    if (section == 2)
     {
-        return 3;
+        return 4;
     }else
     {
         return 1;
@@ -39,7 +43,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 3;
+    return 4;
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -51,24 +55,46 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:exploreCellId];
     }
     [self setCellTitleWithIndexPath:indexPath cell:cell];
+    [self setCellTypeWithIndexPath:indexPath cell:cell];
     return cell;
 }
 
 - (void)setCellTitleWithIndexPath:(NSIndexPath*)indexPath cell:(UITableViewCell*)cell
 {
-    NSString * msg = @"NULL";
+    NSString * msg = nil;
     if (indexPath.section == 0)
     {
         msg = @"我";
     }
-    else if (indexPath.section == 1)
+    else if (indexPath.section == 2)
     {
-        msg = @"预留";
-    }else
+        msg = _cellName[indexPath.row];
+    }
+    else if (indexPath.section == 3)
     {
         msg = @"设置";
     }
-    [cell.textLabel setText:msg];
+    
+    if (msg)
+    {
+        [cell.textLabel setText:msg];
+    }
+}
+
+- (void)setCellTypeWithIndexPath:(NSIndexPath*)indexPath cell:(UITableViewCell*)cell
+{
+    if (indexPath.section!=1) {
+        [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
+    }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section ==1) {
+        return 60;
+    }else{
+        return 44;
+    }
 }
 
 # pragma mark - UITableViewDelegate

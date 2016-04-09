@@ -8,6 +8,7 @@
 
 #import "Baby_MainViewController.h"
 
+#import "Baby_BabyInfoViewController.h"
 @implementation Baby_MainViewController
 
 - (void)viewWillAppear:(BOOL)animated
@@ -22,6 +23,15 @@
 {
     Baby_MsgEnterViewController * loginVc = [[Baby_MsgEnterViewController alloc] init];
     UINavigationController * lrNav = [[UINavigationController alloc] initWithRootViewController:loginVc];
+    [self presentViewController:lrNav animated:YES completion:^{
+        
+    }];
+}
+
+- (IBAction)showBabyInfo:(id)sender
+{
+    Baby_BabyInfoViewController * infoVc = [[Baby_BabyInfoViewController alloc] init];
+    UINavigationController * lrNav = [[UINavigationController alloc] initWithRootViewController:infoVc];
     [self presentViewController:lrNav animated:YES completion:^{
         
     }];

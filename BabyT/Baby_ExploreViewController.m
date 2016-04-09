@@ -11,7 +11,9 @@
 #import "Baby_TimeLineViewController.h"
 
 @interface Baby_ExploreViewController ()<UITableViewDataSource,UITableViewDelegate>
-
+{
+    NSArray * _tableImageName;
+}
 @end
 
 @implementation Baby_ExploreViewController
@@ -25,6 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _tableImageName = @[@"Explore_Baby.png",@"Explore_Find.png",@"Explore_ToolBox.png"];
 }
 
 # pragma mark - TableViewDataSource
@@ -68,6 +71,7 @@
     {
         msg = @"NULL";
     }
+    [cell.imageView setImage:[UIImage imageNamed:_tableImageName[indexPath.section]]];
     [cell.textLabel setText:msg];
 }
 
