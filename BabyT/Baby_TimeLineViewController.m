@@ -25,9 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"宝贝圈";
-    
-//    [self leftBarButtonItem];
+    self.title = @"宝贝圈";    
 }
 
 -(void) viewDidAppear:(BOOL)animated

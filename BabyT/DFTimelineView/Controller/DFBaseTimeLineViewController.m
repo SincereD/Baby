@@ -63,7 +63,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+
     [self initTableView];
     
     [self initHeader];
@@ -76,7 +77,7 @@
 
 -(void) initTableView
 {
-    _tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
     //_tableView.backgroundColor = [UIColor darkGrayColor];
     _tableView.delegate = self;
     _tableView.dataSource = self;

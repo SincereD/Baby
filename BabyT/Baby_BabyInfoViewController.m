@@ -7,6 +7,7 @@
 //
 
 #import "Baby_BabyInfoViewController.h"
+#import "Baby_BabySubInfoViewController.h"
 
 @interface Baby_BabyInfoViewController ()
 {
@@ -29,6 +30,7 @@
     [super viewDidLoad];
     [self createRect];
     [self createUI];
+    [self setTitle:@"选择状态"];
 }
 
 /**
@@ -56,24 +58,28 @@
  */
 - (void)createUI
 {
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:242.0f/255.0f green:242.0f/255.0f blue:242.0f/255.0f alpha:1];
+    self.navigationController.navigationBar.tintColor = [UIColor redColor];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor]}];
+    
+    UIBarButtonItem * left = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(backword)];
+    self.navigationItem.leftBarButtonItem = left;
+    
     _prepareBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_prepareBtn setFrame:btnRect1];
     [_prepareBtn setBackgroundImage:[UIImage imageNamed:@"BabyState_PrepareSelected"] forState:UIControlStateNormal];
-    [_prepareBtn setBackgroundImage:[UIImage imageNamed:@"BabyState_PrepareSelected"] forState:UIControlStateSelected];
     [_prepareBtn addTarget:self action:@selector(prepare:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_prepareBtn];
     
     _duringBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_duringBtn setFrame:btnRect2];
     [_duringBtn setBackgroundImage:[UIImage imageNamed:@"BabyState_DuringSelected.png"] forState:UIControlStateNormal];
-    [_duringBtn setBackgroundImage:[UIImage imageNamed:@"BabyState_DuringSelected.png"] forState:UIControlStateSelected];
     [_duringBtn addTarget:self action:@selector(prepare:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_duringBtn];
     
     _finishedBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_finishedBtn setFrame:btnRect3];
     [_finishedBtn setBackgroundImage:[UIImage imageNamed:@"BabyState_FinishedSelected.png"] forState:UIControlStateNormal];
-    [_finishedBtn setBackgroundImage:[UIImage imageNamed:@"BabyState_FinishedSelected.png"] forState:UIControlStateSelected];
     [_finishedBtn addTarget:self action:@selector(prepare:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_finishedBtn];
     
@@ -87,11 +93,20 @@
 }
 
 /**
+ *   退出
+ */
+- (void)backword
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+/**
  *  备孕选择
  */
 - (void)prepare:(UIButton*)sender
 {
-    sender.selected = YES;
+    [self performSelector:@selector(pushToSubInfo:) withObject:nil afterDelay:0.3];
 }
 
 /**
@@ -99,7 +114,7 @@
  */
 - (void)during:(UIButton*)sender
 {
-    sender.selected = YES;
+    [self performSelector:@selector(pushToSubInfo:) withObject:nil afterDelay:0.3];
 }
 
 /**
@@ -107,7 +122,13 @@
  */
 - (void)finished:(UIButton*)sender
 {
-    sender.selected = YES;
+    [self performSelector:@selector(pushToSubInfo:) withObject:nil afterDelay:0.3];
+}
+
+- (void)pushToSubInfo:(id)obj
+{
+    Baby_BabySubInfoViewController * subInfo = [[Baby_BabySubInfoViewController alloc] init];
+    [self.navigationController pushViewController:subInfo animated:YES];
 }
 
 @end

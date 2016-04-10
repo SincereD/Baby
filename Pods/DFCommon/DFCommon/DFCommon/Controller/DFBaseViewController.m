@@ -56,14 +56,14 @@
     self.view.backgroundColor = BaseViewColor;
     
     
-    if ([self leftBarButtonItem] != nil) {
-        self.navigationItem.leftBarButtonItem = [self leftBarButtonItem];
-    }
-    
-    
-    if ([self rightBarButtonItem] != nil) {
-        self.navigationItem.rightBarButtonItem = [self rightBarButtonItem];
-    }
+//    if ([self leftBarButtonItem] != nil) {
+//        self.navigationItem.leftBarButtonItem = [self leftBarButtonItem];
+//    }
+//    
+//    
+//    if ([self rightBarButtonItem] != nil) {
+//        self.navigationItem.rightBarButtonItem = [self rightBarButtonItem];
+//    }
     
     
     
