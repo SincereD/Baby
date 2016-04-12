@@ -9,11 +9,13 @@
 #import "Baby_MainViewController.h"
 
 #import "Baby_BabyInfoViewController.h"
+#import "Baby_MainSideViewController.h"
 
 #import "Baby_AdvertiseView.h"
 
 @interface Baby_MainViewController ()
 {
+    Baby_MainSideViewController * _sideVC;
     Baby_AdvertiseView * _advertiseView;
 }
 @end
@@ -37,8 +39,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self initSences];
     [self setNavStyle];
     [self initAdvertise];
+}
+
+- (void)initSences
+{
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 /**
@@ -86,7 +94,16 @@
  */
 - (void)showSideVC
 {
-    
+    if (_sideVC)
+    {
+        [_sideVC show];
+    }else
+    {
+        _sideVC = [[Baby_MainSideViewController alloc] init];
+        [_sideVC setBaseVC:self];
+        [self.view addSubview:_sideVC.view];
+        [_sideVC show];
+    }
 }
 
 /**

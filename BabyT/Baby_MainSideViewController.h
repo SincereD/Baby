@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Baby_SideViewController.h"
 
-@interface Baby_MainSideViewController : UIViewController
+@interface Baby_MainSideViewController : Baby_SideViewController
 
 @end

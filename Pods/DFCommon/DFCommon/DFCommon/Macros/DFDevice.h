@@ -9,8 +9,10 @@
 #ifndef Heacha_DFDevice_h
 #define Heacha_DFDevice_h
 
-#define ScreenWidth [UIScreen mainScreen].bounds.size.width
-#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define ScreenWidth   [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight  [UIScreen mainScreen].bounds.size.height
+#define ScreenBounds  [UIScreen mainScreen].bounds
 #define SystemVersion [RRDevice systemVersionNumber]
+
 
 #endif

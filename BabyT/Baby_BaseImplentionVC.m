@@ -8,6 +8,12 @@
 
 #import "Baby_BaseImplentionVC.h"
 
+@interface Baby_BaseImplentionVC ()
+
+@property (nonatomic,assign) Baby_SideViewController * sideVC;
+
+@end
+
 @implementation Baby_BaseImplentionVC
 
 - (void)setTabbarTitle:(NSString*)title
@@ -41,6 +47,20 @@
 - (void)hideTabbar
 {
     [self.tabBarController.tabBar setHidden:YES];
+}
+
+- (void)showSideViewController:(Baby_SideViewController*)sideVC
+{
+    _sideVC = sideVC;
+}
+
+- (void)disMissSideVC
+{
+    [UIView animateWithDuration:0.5 animations:^{
+        
+    } completion:^(BOOL finished) {
+        
+    }];
 }
 
 @end

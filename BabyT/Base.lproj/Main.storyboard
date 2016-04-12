@@ -202,14 +202,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZL-dG-ioF">
-                                <rect key="frame" x="68" y="191" width="104" height="41"/>
+                                <rect key="frame" x="203" y="133" width="104" height="41"/>
                                 <state key="normal" title="登陆注册"/>
                                 <connections>
                                     <action selector="showLoginRegisterVC:" destination="WxM-g2-yr9" eventType="touchUpInside" id="7zu-tf-UTO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3l-fH-asv">
-                                <rect key="frame" x="89" y="240" width="66" height="30"/>
+                                <rect key="frame" x="254" y="250" width="66" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="添加信息"/>
                                 <connections>

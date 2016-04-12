@@ -133,6 +133,7 @@
 		C6EE932D1CB0D67D00AAFEE8 /* bar_HeartSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = C6EE93251CB0D67D00AAFEE8 /* bar_HeartSelected.png */; };
 		C6EE932E1CB0D67D00AAFEE8 /* bar_MeDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = C6EE93261CB0D67D00AAFEE8 /* bar_MeDefault.png */; };
 		C6EE932F1CB0D67D00AAFEE8 /* bar_MeSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = C6EE93271CB0D67D00AAFEE8 /* bar_MeSelected.png */; };
+		C6FA36DA1CBD2F0000B25C03 /* Baby_SideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA36D91CBD2F0000B25C03 /* Baby_SideViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -318,6 +319,8 @@
 		C6EE93251CB0D67D00AAFEE8 /* bar_HeartSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_HeartSelected.png; sourceTree = "<group>"; };
 		C6EE93261CB0D67D00AAFEE8 /* bar_MeDefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_MeDefault.png; sourceTree = "<group>"; };
 		C6EE93271CB0D67D00AAFEE8 /* bar_MeSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_MeSelected.png; sourceTree = "<group>"; };
+		C6FA36D81CBD2F0000B25C03 /* Baby_SideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_SideViewController.h; sourceTree = "<group>"; };
+		C6FA36D91CBD2F0000B25C03 /* Baby_SideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_SideViewController.m; sourceTree = "<group>"; };
 		E2BF55DAEF9A3102F33CAFCA /* Pods-BabyT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabyT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BabyT/Pods-BabyT.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -393,6 +396,8 @@
 				C6082F031C88464B00E01669 /* Info.plist */,
 				C64385161C8BD71200A05E53 /* Baby_BaseViewController.h */,
 				C64385171C8BD71200A05E53 /* Baby_BaseViewController.m */,
+				C6FA36D81CBD2F0000B25C03 /* Baby_SideViewController.h */,
+				C6FA36D91CBD2F0000B25C03 /* Baby_SideViewController.m */,
 				C6082EF31C88464B00E01669 /* main.m */,
 				C62D04CB1C911F36004F4595 /* PrefixHeader.pch */,
 			);
@@ -1140,6 +1145,7 @@
 				C64385211C8BDA8900A05E53 /* Baby_KnowledgeViewController.m in Sources */,
 				C643852F1C8DBB6300A05E53 /* Baby_BaseImplentionVC.m in Sources */,
 				C62D04BC1C911D85004F4595 /* DFTextImageLineCell.m in Sources */,
+				C6FA36DA1CBD2F0000B25C03 /* Baby_SideViewController.m in Sources */,
 				C62D04BB1C911D85004F4595 /* DFImageUnitView.m in Sources */,
 				C63B58161CAABDD500CF4197 /* Baby_FindViewController.m in Sources */,
 				C62D049E1C911D85004F4595 /* DFBaseUserLineCellAdapter.m in Sources */,
