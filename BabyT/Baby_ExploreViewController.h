@@ -11,6 +11,4 @@
 
 @interface Baby_ExploreViewController : Baby_BaseImplentionVC
 
-@property (nonatomic,weak)IBOutlet UITableView * expTableView;
-
 @end

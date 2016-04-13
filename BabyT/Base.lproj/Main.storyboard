@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Baby Find View Controller-->
@@ -36,28 +35,11 @@
                     <view key="view" contentMode="scaleToFill" id="6pE-AX-fTZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="cQm-iN-2OC">
-                                <rect key="frame" x="-4" y="0.0" width="328" height="519"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="BPR-2a-9Dd" id="scu-qE-b28"/>
-                                    <outlet property="delegate" destination="BPR-2a-9Dd" id="Esn-3O-uuS"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="cQm-iN-2OC" firstAttribute="leading" secondItem="6pE-AX-fTZ" secondAttribute="leadingMargin" constant="-20" id="DmX-Dd-IVf"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="cQm-iN-2OC" secondAttribute="trailing" constant="-20" id="KZZ-3C-qxK"/>
-                            <constraint firstItem="0d6-ol-N7O" firstAttribute="top" secondItem="cQm-iN-2OC" secondAttribute="bottom" id="de3-MK-h1V"/>
-                            <constraint firstItem="cQm-iN-2OC" firstAttribute="top" secondItem="8Na-zi-hy7" secondAttribute="bottom" constant="-64" id="vo9-47-Kcl"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="发现" image="bar_ExploreDefault.png" selectedImage="bar_ExploreSelected.png" id="Qbh-Rg-h9S"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="expTableView" destination="cQm-iN-2OC" id="Ahy-zf-L8M"/>
                         <segue destination="zd7-Rb-njV" kind="show" identifier="ToolBox" id="nP0-pn-CrB"/>
                         <segue destination="mgW-zA-hVd" kind="show" identifier="Find" id="WyB-dW-b0Q"/>
                     </connections>
@@ -159,31 +141,12 @@
                     <view key="view" contentMode="scaleToFill" id="WYF-Mt-fjX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="HGh-76-SjL">
-                                <rect key="frame" x="-4" y="0.0" width="328" height="519"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="uVt-zC-qPv" id="KSq-PG-okv"/>
-                                    <outlet property="delegate" destination="uVt-zC-qPv" id="ORH-GU-Phs"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="HGh-76-SjL" firstAttribute="top" secondItem="1vq-3d-hbv" secondAttribute="bottom" constant="-64" id="Yhj-vP-wnQ"/>
-                            <constraint firstItem="CsW-WN-eKB" firstAttribute="top" secondItem="HGh-76-SjL" secondAttribute="bottom" id="bGL-Cg-nAg"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HGh-76-SjL" secondAttribute="trailing" constant="-20" id="hWz-Bc-kP6"/>
-                            <constraint firstItem="HGh-76-SjL" firstAttribute="leading" secondItem="WYF-Mt-fjX" secondAttribute="leadingMargin" constant="-20" id="ikS-VC-6kS"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="我的" image="bar_MeDefault.png" selectedImage="bar_MeSelected.png" id="5pe-Ev-pyG">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="personalTabView" destination="HGh-76-SjL" id="A4S-BT-WIv"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hna-z6-4hi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,6 +13,7 @@
 @interface Baby_ExploreViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     NSArray * _tableImageName;
+    UITableView * _tableView;
 }
 @end
 
@@ -28,6 +29,18 @@
 {
     [super viewDidLoad];
     _tableImageName = @[@"Explore_Baby.png",@"Explore_Find.png",@"Explore_ToolBox.png"];
+    [self tableView];
+}
+
+/**
+ *  初始化表格
+ */
+- (void)tableView
+{
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, ScreenWidth, ScreenHeight-64) style:UITableViewStyleGrouped];
+    [_tableView setDelegate:self];
+    [_tableView setDataSource:self];
+    [self.view addSubview:_tableView];
 }
 
 # pragma mark - TableViewDataSource
@@ -39,6 +52,15 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 3;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 10;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 10;
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

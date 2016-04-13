@@ -11,6 +11,4 @@
 
 @interface Baby_PersonalInfoViewController : Baby_BaseImplentionVC
 
-@property (nonatomic,weak)IBOutlet UITableView * personalTabView;
-
 @end

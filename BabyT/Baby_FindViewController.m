@@ -21,12 +21,26 @@
 {
     [self.view setBackgroundColor:[UIColor whiteColor]];
     [self setTitle:@"找一找"];
+    [self rightItme];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     [self initBaiduMap];
+}
+
+- (void)rightItme
+{
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(search)];
+}
+
+/**
+ *  右侧导航栏按钮事件
+ */
+- (void)search
+{
+    
 }
 
 # pragma mark - BaiduMap
