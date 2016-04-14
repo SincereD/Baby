@@ -162,15 +162,18 @@
 -(void) addNotify
 
 {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onKeyboradShow:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onKeyboradShow:) name:UIKeyboardWillChangeFrameNotification  object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onKeyboradDisMiss:) name:UIKeyboardWillHideNotification  object:nil];
 }
 
 
 -(void) removeNotify
 
 {
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
-
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillChangeFrameNotification object:nil];
+   
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
 }
 
 
@@ -185,9 +188,12 @@
     _keyboardAnimationCurve = [[info objectForKey:UIKeyboardAnimationCurveUserInfoKey] integerValue];
     
     [self changeInputViewOffsetY:(frame.origin.y - InputViewHeight) ];
-    
 }
 
+-(void) onKeyboradDisMiss:(NSNotification *) notify
+{
+    [self hideInputView];
+}
 
 
 #pragma mark - Observer
@@ -238,7 +244,7 @@
     CGFloat x,y,width,height;
     CGRect frame = _inputView.frame;
     x = frame.origin.x;
-    y = newOffsetY;
+    y = newOffsetY - 64;
     width = frame.size.width;
     height = frame.size.height;
     
