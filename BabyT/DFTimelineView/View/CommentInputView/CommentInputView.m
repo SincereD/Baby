@@ -244,7 +244,7 @@
     CGFloat x,y,width,height;
     CGRect frame = _inputView.frame;
     x = frame.origin.x;
-    y = newOffsetY - 64;
+    y = newOffsetY - 44 - [[UIApplication sharedApplication] statusBarFrame].size.height;
     width = frame.size.width;
     height = frame.size.height;
     
