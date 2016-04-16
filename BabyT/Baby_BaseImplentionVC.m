@@ -49,6 +49,16 @@
     [self.tabBarController.tabBar setHidden:YES];
 }
 
+- (void)showNavBar
+{
+    [self.navigationController setNavigationBarHidden:NO];
+}
+
+- (void)hideNavBar
+{
+    [self.navigationController setNavigationBarHidden:YES];
+}
+
 - (void)showSideViewController:(Baby_SideViewController*)sideVC
 {
     _sideVC = sideVC;

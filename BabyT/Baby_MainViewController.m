@@ -83,7 +83,7 @@
 {
     UIButton * leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [leftBtn addTarget:self action:@selector(showSideVC) forControlEvents:UIControlEventTouchUpInside];
-    [leftBtn setFrame:CGRectMake(0, 0, 30, 30)];
+    [leftBtn setFrame:CGRectMake(0, 0, 26, 26)];
     [leftBtn setBackgroundImage:[UIImage imageNamed:@"Baby_Main_LeftIcon.png"] forState:UIControlStateNormal];
     UIBarButtonItem * left = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
     self.tabBarController.navigationItem.leftBarButtonItem = left;

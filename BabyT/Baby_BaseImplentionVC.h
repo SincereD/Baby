@@ -37,6 +37,16 @@
 - (void)hideTabbar;
 
 /**
+ *  显示导航栏
+ */
+- (void)showNavBar;
+
+/**
+ *  隐藏导航栏
+ */
+- (void)hideNavBar;
+
+/**
  *  显示侧边栏
  *
  *  @param sideVC UIViewController

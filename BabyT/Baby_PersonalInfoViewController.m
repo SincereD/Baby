@@ -10,7 +10,11 @@
 
 @interface Baby_PersonalInfoViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
-    NSArray * _cellName;
+    NSArray * _sectionOneName;
+    NSArray * _sectionOneImageName;
+    NSArray * _sectionTwoName;
+    NSArray * _sectionTwoImageName;
+
     UITableView * _table;
 }
 
@@ -21,13 +25,22 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self setTabbarTitle:@"我的"];
+    [self hideNavBar];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self showNavBar];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _cellName = @[@"宝贝信息",@"照片管理",@"意见反馈",@"关于我们"];
+    _sectionOneName = @[@"宝贝信息",@"照片管理"];
+    _sectionOneName = @[];
+    _sectionTwoName = @[@"意见反馈",@"关于我们",@"设置"];
+    _sectionTwoName = @[];
     [self tableView];
 }
 
@@ -36,7 +49,7 @@
  */
 - (void)tableView
 {
-    _table = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, ScreenWidth, ScreenHeight-64) style:UITableViewStyleGrouped];
+    _table = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStyleGrouped];
     [_table setDelegate:self];
     [_table setDataSource:self];
     [self.view addSubview:_table];
@@ -46,12 +59,12 @@
 # pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    if (section == 1)
+    if (section == 2)
     {
-        return 4;
+        return 3;
     }else
     {
-        return 1;
+        return 2;
     }
 }
 
@@ -61,12 +74,12 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return 10;
+    return 0;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 10;
+    return 0;
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -91,7 +104,7 @@
     }
     else if (indexPath.section == 1)
     {
-        msg = _cellName[indexPath.row];
+//        msg = _cellName[indexPath.row];
     }
     else if (indexPath.section == 2)
     {
@@ -106,7 +119,11 @@
 
 - (void)setCellTypeWithIndexPath:(NSIndexPath*)indexPath cell:(UITableViewCell*)cell
 {
-    if (indexPath.section!=1) {
+    if (indexPath.section==0 && indexPath.row==1)
+    {
+        [cell setAccessoryType:UITableViewCellAccessoryNone];
+    }else
+    {
         [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     }
 }

@@ -10,12 +10,6 @@
 
 @interface Baby_SideViewController ()
 
-@property (nonatomic,assign)CGFloat  panedWidth;
-@property (nonatomic,assign)CGFloat  prestedWidth;
-@property (nonatomic,assign)CGRect   tapRect;
-@property (nonatomic,strong)UIView * maskView;
-@property (nonatomic,strong)UIView * presentedView;
-
 @end
 
 @implementation Baby_SideViewController
@@ -29,12 +23,17 @@
     return self;
 }
 
-- (void)viewDidLoad
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidLoad];
+    [super viewWillAppear:animated];
     [self fitSize];
     [self createMaskView];
     [self createPresetedView];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
 }
 
 /**
@@ -54,15 +53,12 @@
 - (void)createMaskView
 {
     _maskView = [[UIView alloc] initWithFrame:ScreenBounds];
-    _maskView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0];
+    _maskView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1.0f];
+    _maskView.alpha = 0.5f;
     [self.view addSubview:_maskView];
     
     UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
     [_maskView addGestureRecognizer:tap];
-    
-    UITapGestureRecognizer * doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dissMissView)];
-    [doubleTap setNumberOfTapsRequired:2];
-    [self.view addGestureRecognizer:doubleTap];
     
     UIPanGestureRecognizer * pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
     [self.view addGestureRecognizer:pan];
@@ -74,7 +70,7 @@
 - (void)createPresetedView
 {
     _presentedView = [[UIView alloc] initWithFrame:CGRectMake(-_prestedWidth, 0, _prestedWidth, ScreenHeight)];
-    _presentedView.backgroundColor = [UIColor brownColor];
+    [_presentedView setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:_presentedView];
 }
 
@@ -114,7 +110,7 @@
     {
         _presentedView.center = CGPointMake(_presentedView.center.x + panPoint.x, _presentedView.center.y);
         
-        _maskView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5f * (_prestedWidth + _panedWidth) / _prestedWidth];
+        _maskView.alpha = 0.5f * (_prestedWidth + _panedWidth) / _prestedWidth;
     }
     
     CGFloat time = 0;

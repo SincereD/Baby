@@ -10,6 +10,13 @@
 
 @interface Baby_BabyInfoView : UIView
 
-- (instancetype)init;
+/**
+ *  初始化
+ *
+ *  @param frame Frame
+ *
+ *  @return Instance
+ */
+- (instancetype)initWithFrame:(CGRect)frame;
 
 @end

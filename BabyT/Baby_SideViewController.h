@@ -20,6 +20,11 @@
  */
 - (void)dissMissView;
 
-@property (nonatomic) UIViewController * baseVC;
+@property (nonatomic,assign)UIViewController * baseVC;
+@property (nonatomic,assign)CGFloat  panedWidth;
+@property (nonatomic,assign)CGFloat  prestedWidth;
+@property (nonatomic,assign)CGRect   tapRect;
+@property (nonatomic,strong)UIView * maskView;
+@property (nonatomic,strong)UIView * presentedView;
 
 @end
