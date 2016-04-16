@@ -52,6 +52,11 @@
  */
 - (void)createMaskView
 {
+    if (_maskView)
+    {
+        return;
+    }
+    
     _maskView = [[UIView alloc] initWithFrame:ScreenBounds];
     _maskView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1.0f];
     _maskView.alpha = 0.5f;
@@ -69,6 +74,11 @@
  */
 - (void)createPresetedView
 {
+    if (_presentedView)
+    {
+        return;
+    }
+    
     _presentedView = [[UIView alloc] initWithFrame:CGRectMake(-_prestedWidth, 0, _prestedWidth, ScreenHeight)];
     [_presentedView setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:_presentedView];

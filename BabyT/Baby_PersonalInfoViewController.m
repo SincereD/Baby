@@ -11,11 +11,11 @@
 @interface Baby_PersonalInfoViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     NSArray * _sectionOneName;
-    NSArray * _sectionOneImageName;
     NSArray * _sectionTwoName;
-    NSArray * _sectionTwoImageName;
+    NSArray * _footerName;
 
     UITableView * _table;
+    UIImageView * _tableFooterView;
 }
 
 @end
@@ -38,49 +38,51 @@
 {
     [super viewDidLoad];
     _sectionOneName = @[@"宝贝信息",@"照片管理"];
-    _sectionOneName = @[];
     _sectionTwoName = @[@"意见反馈",@"关于我们",@"设置"];
-    _sectionTwoName = @[];
     [self tableView];
 }
 
 /**
  *  初始化表格
+ *  20 -> -40
+ *  40 -> -20;
  */
 - (void)tableView
 {
-    _table = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStyleGrouped];
+    CGFloat statusHeight = [[UIApplication sharedApplication] statusBarFrame].size.height - 60;
+    _table = [[UITableView alloc] initWithFrame:CGRectMake(0,statusHeight, ScreenWidth, ScreenHeight) style:UITableViewStyleGrouped];
     [_table setDelegate:self];
     [_table setDataSource:self];
     [self.view addSubview:_table];
-    self.edgesForExtendedLayout = UIRectEdgeNone;
+}
+
+- (UIView*)tabelFooterView
+{
+    
+    _footerName =@[@"收藏",@"积分",@"消息"];
+    _tableFooterView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"背景.png"]];
+    [_tableFooterView setUserInteractionEnabled:YES];
+    [_tableFooterView setFrame:CGRectMake(0, 0, ScreenWidth, 50)];
+    
+    for (int i = 0 ; i < 3; i++)
+    {
+        CGRect btnRect = CGRectMake(i*ScreenWidth/3, 0, ScreenWidth/3, 50);
+        UIButton * footerBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [footerBtn setFrame:btnRect];
+        [footerBtn setImage:[UIImage imageNamed:_footerName[i]] forState:UIControlStateNormal];
+        [footerBtn setTitle:_footerName[i] forState:UIControlStateNormal];
+        [footerBtn.titleLabel setFont: [UIFont systemFontOfSize:15.0f]];    
+        [footerBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+        [footerBtn setImageEdgeInsets:UIEdgeInsetsMake(10, (ScreenWidth/3.0f - 15)/2, 25, (ScreenWidth/3.0f - 15)/2)];
+        [footerBtn setTitleEdgeInsets:UIEdgeInsetsMake(25, -(ScreenWidth/3.0f - 30)/2, 0, 0)];
+        [_tableFooterView addSubview:footerBtn];
+        
+    }
+    
+    return _tableFooterView;
 }
 
 # pragma mark - UITableViewDataSource
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    if (section == 2)
-    {
-        return 3;
-    }else
-    {
-        return 2;
-    }
-}
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 3;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return 0;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    return 0;
-}
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -88,27 +90,56 @@
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:exploreCellId];
     if (!cell)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:exploreCellId];
+        UITableViewCellStyle style = UITableViewCellStyleDefault;
+        if (indexPath.section == 0)
+        {
+            style = UITableViewCellStyleSubtitle;
+        }
+        cell = [[UITableViewCell alloc] initWithStyle:style reuseIdentifier:exploreCellId];
+        [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     }
     [self setCellTitleWithIndexPath:indexPath cell:cell];
-    [self setCellTypeWithIndexPath:indexPath cell:cell];
     return cell;
 }
 
+- (UIView*)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    if (section == 0)
+    {
+        return [self tabelFooterView];
+    }
+    return nil;
+}
+
+/**
+ *  设置Cell属性
+ *
+ *  @param indexPath NSIndexPath
+ *  @param cell      UITableViewCell
+ */
 - (void)setCellTitleWithIndexPath:(NSIndexPath*)indexPath cell:(UITableViewCell*)cell
 {
     NSString * msg = nil;
     if (indexPath.section == 0)
     {
         msg = @"我";
+        [cell.imageView setImage:[UIImage imageNamed:@"user.png"]];
+        [cell.textLabel setTextColor:[UIColor whiteColor]];
+        [cell setBackgroundColor:[UIColor colorWithRed:238.0f/255.0f green:96.0f/255.0f blue:87.0f/255.0f alpha:1.0f]];
+        [cell.detailTextLabel setText:@"没女朋友"];
+        [cell.detailTextLabel setTextColor:[UIColor whiteColor]];
+        [cell setTintColor:[UIColor whiteColor]];
     }
     else if (indexPath.section == 1)
     {
-//        msg = _cellName[indexPath.row];
+        msg = _sectionOneName[indexPath.row];
+        [cell.accessoryView setBackgroundColor:[UIColor whiteColor]];
+        [cell.imageView setImage:[UIImage imageNamed:_sectionOneName[indexPath.row]]];
     }
     else if (indexPath.section == 2)
     {
-        msg = @"设置";
+        msg = _sectionTwoName[indexPath.row];
+        [cell.imageView setImage:[UIImage imageNamed:_sectionTwoName[indexPath.row]]];
     }
     
     if (msg)
@@ -117,18 +148,53 @@
     }
 }
 
-- (void)setCellTypeWithIndexPath:(NSIndexPath*)indexPath cell:(UITableViewCell*)cell
+# pragma mark - UITableViewDelegate
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (indexPath.section==0 && indexPath.row==1)
+    return section+1;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 3;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    if (section == 0)
     {
-        [cell setAccessoryType:UITableViewCellAccessoryNone];
-    }else
+        return 50.0f;
+    }
+    else
     {
-        [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
+        return 20.0f;
     }
 }
 
-# pragma mark - UITableViewDelegate
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if (section == 0 )
+    {
+        return 0.0f;
+    }
+    else
+    {
+        return 20.0f;
+    }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section==0)
+    {
+        return 150.0f;
+    }
+    else
+    {
+        return 44.0f;
+    }
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
