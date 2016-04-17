@@ -40,6 +40,7 @@
     _sectionOneName = @[@"宝贝信息",@"照片管理"];
     _sectionTwoName = @[@"意见反馈",@"关于我们",@"设置"];
     [self tableView];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateTableFrame) name:UIApplicationWillChangeStatusBarFrameNotification object:nil];
 }
 
 /**
@@ -56,6 +57,14 @@
     [self.view addSubview:_table];
 }
 
+- (void)updateTableFrame
+{
+    CGFloat statusHeight = [[UIApplication sharedApplication] statusBarFrame].size.height - 60;
+    [UIView animateWithDuration:0.3 animations:^{
+        _table.frame = CGRectMake(0, statusHeight, ScreenWidth, ScreenHeight);
+    }];
+}
+
 - (UIView*)tabelFooterView
 {
     
@@ -66,17 +75,19 @@
     
     for (int i = 0 ; i < 3; i++)
     {
-        CGRect btnRect = CGRectMake(i*ScreenWidth/3, 0, ScreenWidth/3, 50);
+        CGRect btnRect = CGRectMake(i*ScreenWidth/3.0f, 0, ScreenWidth/3.0f, 50.0f);
         UIButton * footerBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [footerBtn setFrame:btnRect];
         [footerBtn setImage:[UIImage imageNamed:_footerName[i]] forState:UIControlStateNormal];
-        [footerBtn setTitle:_footerName[i] forState:UIControlStateNormal];
-        [footerBtn.titleLabel setFont: [UIFont systemFontOfSize:15.0f]];    
-        [footerBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         [footerBtn setImageEdgeInsets:UIEdgeInsetsMake(10, (ScreenWidth/3.0f - 15)/2, 25, (ScreenWidth/3.0f - 15)/2)];
-        [footerBtn setTitleEdgeInsets:UIEdgeInsetsMake(25, -(ScreenWidth/3.0f - 30)/2, 0, 0)];
         [_tableFooterView addSubview:footerBtn];
         
+        UILabel * titleLab = [[UILabel alloc] initWithFrame:CGRectMake(i*ScreenWidth/3.0f, 30, ScreenWidth/3.0f, 20)];
+        [titleLab setText:_footerName[i]];
+        [titleLab setTextColor:[UIColor grayColor]];
+        [titleLab setFont:[UIFont systemFontOfSize:15.0f]];
+        [titleLab setTextAlignment:NSTextAlignmentCenter];
+        [_tableFooterView addSubview:titleLab];
     }
     
     return _tableFooterView;

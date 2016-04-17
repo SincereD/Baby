@@ -28,14 +28,38 @@
     self.title = @"宝贝圈";    
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self initData];
+    [self rightItme];
+    [self setHeader];
+}
+
 -(void) viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
-    [self initData];
-    
-    [self setHeader];
+}
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self removeRightItme];
+}
+
+- (void)rightItme
+{
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addMsg:)];
+}
+
+- (void)removeRightItme
+{
+    self.navigationItem.rightBarButtonItem = nil;
+}
+
+- (void)addMsg:(id)sender
+{
+    
 }
 
 -(void) setHeader
@@ -269,10 +293,6 @@
 {
     [self onClickUser:1111];
 }
-
-
-
-
 
 
 -(void) refresh
