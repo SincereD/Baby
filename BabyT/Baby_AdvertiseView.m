@@ -45,6 +45,8 @@
     _scroll.pagingEnabled = YES;
     [_scroll setDelegate:self];
     [_scroll setContentSize:CGSizeMake(ScreenWidth*3, 60)];
+    [_scroll setShowsVerticalScrollIndicator:NO];
+    [_scroll setShowsHorizontalScrollIndicator:NO];
     [self addSubview:_scroll];
     [self sendSubviewToBack:_scroll];
     

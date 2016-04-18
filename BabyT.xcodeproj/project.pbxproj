@@ -65,6 +65,8 @@
 		C62D04C41C911D93004F4595 /* UserTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62D04C31C911D93004F4595 /* UserTimelineViewController.m */; };
 		C62D04CA1C911E39004F4595 /* Baby_TimeLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62D04C91C911E39004F4595 /* Baby_TimeLineViewController.m */; };
 		C62D04D01C912167004F4595 /* Baby_ToolBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62D04CF1C912167004F4595 /* Baby_ToolBoxViewController.m */; };
+		C63533231CC51B8200D5AA60 /* 婴儿状态@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C63533221CC51B8200D5AA60 /* 婴儿状态@2x.png */; };
+		C63533251CC51B9D00D5AA60 /* 怀孕状态@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C63533241CC51B9D00D5AA60 /* 怀孕状态@2x.png */; };
 		C638C2441CB54494000B452C /* Reset_Bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C638C2411CB54494000B452C /* Reset_Bg.png */; };
 		C638C2451CB54494000B452C /* Reset_Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = C638C2421CB54494000B452C /* Reset_Btn.png */; };
 		C638C2461CB54494000B452C /* Reset_Next.png in Resources */ = {isa = PBXBuildFile; fileRef = C638C2431CB54494000B452C /* Reset_Next.png */; };
@@ -138,6 +140,7 @@
 		C6A206541CBA910B00A92EE6 /* Baby_MainSideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6A206521CBA910B00A92EE6 /* Baby_MainSideViewController.xib */; };
 		C6A2065A1CBA935900A92EE6 /* Baby_BabyInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A206591CBA935900A92EE6 /* Baby_BabyInfoView.m */; };
 		C6A2065D1CBA938800A92EE6 /* Baby_AdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A2065C1CBA938800A92EE6 /* Baby_AdvertiseView.m */; };
+		C6C2DF131CC513C8001FF73B /* Baby_BabyMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C2DF121CC513C8001FF73B /* Baby_BabyMessageView.m */; };
 		C6D9E7471CC22EEB00E18152 /* 宝宝头像@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E7461CC22EEB00E18152 /* 宝宝头像@2x.png */; };
 		C6D9E7491CC22EF100E18152 /* 产检时间表@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E7481CC22EF100E18152 /* 产检时间表@2x.png */; };
 		C6D9E74B1CC22EF700E18152 /* 食谱@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E74A1CC22EF700E18152 /* 食谱@2x.png */; };
@@ -252,6 +255,8 @@
 		C62D04CB1C911F36004F4595 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C62D04CE1C912167004F4595 /* Baby_ToolBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_ToolBoxViewController.h; sourceTree = "<group>"; };
 		C62D04CF1C912167004F4595 /* Baby_ToolBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_ToolBoxViewController.m; sourceTree = "<group>"; };
+		C63533221CC51B8200D5AA60 /* 婴儿状态@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "婴儿状态@2x.png"; sourceTree = "<group>"; };
+		C63533241CC51B9D00D5AA60 /* 怀孕状态@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "怀孕状态@2x.png"; sourceTree = "<group>"; };
 		C638C2411CB54494000B452C /* Reset_Bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reset_Bg.png; sourceTree = "<group>"; };
 		C638C2421CB54494000B452C /* Reset_Btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reset_Btn.png; sourceTree = "<group>"; };
 		C638C2431CB54494000B452C /* Reset_Next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reset_Next.png; sourceTree = "<group>"; };
@@ -344,6 +349,8 @@
 		C6A206591CBA935900A92EE6 /* Baby_BabyInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_BabyInfoView.m; sourceTree = "<group>"; };
 		C6A2065B1CBA938800A92EE6 /* Baby_AdvertiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_AdvertiseView.h; sourceTree = "<group>"; };
 		C6A2065C1CBA938800A92EE6 /* Baby_AdvertiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_AdvertiseView.m; sourceTree = "<group>"; };
+		C6C2DF111CC513C8001FF73B /* Baby_BabyMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_BabyMessageView.h; sourceTree = "<group>"; };
+		C6C2DF121CC513C8001FF73B /* Baby_BabyMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_BabyMessageView.m; sourceTree = "<group>"; };
 		C6D9E7461CC22EEB00E18152 /* 宝宝头像@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "宝宝头像@2x.png"; sourceTree = "<group>"; };
 		C6D9E7481CC22EF100E18152 /* 产检时间表@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "产检时间表@2x.png"; sourceTree = "<group>"; };
 		C6D9E74A1CC22EF700E18152 /* 食谱@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "食谱@2x.png"; sourceTree = "<group>"; };
@@ -939,6 +946,8 @@
 			children = (
 				C6A206581CBA935900A92EE6 /* Baby_BabyInfoView.h */,
 				C6A206591CBA935900A92EE6 /* Baby_BabyInfoView.m */,
+				C6C2DF111CC513C8001FF73B /* Baby_BabyMessageView.h */,
+				C6C2DF121CC513C8001FF73B /* Baby_BabyMessageView.m */,
 				C6A2065B1CBA938800A92EE6 /* Baby_AdvertiseView.h */,
 				C6A2065C1CBA938800A92EE6 /* Baby_AdvertiseView.m */,
 			);
@@ -977,6 +986,8 @@
 				C6D9E74C1CC22EFB00E18152 /* 数胎动@2x.png */,
 				C6D9E7501CC22F0300E18152 /* b超@2x.png */,
 				C6A2064E1CBA883200A92EE6 /* Baby_Main_LeftIcon@2x.png */,
+				C63533221CC51B8200D5AA60 /* 婴儿状态@2x.png */,
+				C63533241CC51B9D00D5AA60 /* 怀孕状态@2x.png */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -1100,6 +1111,7 @@
 				C62D04B71C911D85004F4595 /* LikeCmtBg@3x.png in Resources */,
 				C6A0B0081CB9325C0059755B /* Baby_BabyInfoViewController.xib in Resources */,
 				C66731291CC32E7A00BAB5BB /* Explore_Find@3x.png in Resources */,
+				C63533231CC51B8200D5AA60 /* 婴儿状态@2x.png in Resources */,
 				C6A0B0161CB933D90059755B /* BabyState_PrepareNormal.png in Resources */,
 				C6D9E7651CC2706E00E18152 /* user@2x.png in Resources */,
 				C638C24E1CB54D9C000B452C /* Login_Register.png in Resources */,
@@ -1144,6 +1156,7 @@
 				C638C2631CB556CE000B452C /* Register_Tick.png in Resources */,
 				C6D9E7511CC22F0300E18152 /* b超@2x.png in Resources */,
 				C629EBD11CB68D2A0008240C /* Baby_MsgEnterViewController.xib in Resources */,
+				C63533251CC51B9D00D5AA60 /* 怀孕状态@2x.png in Resources */,
 				C659C3731CB699D5008F5BBF /* Pwd_BackBtn.png in Resources */,
 				C6A1E6AC1CA17B3B00676BB9 /* Bubble_colors.png in Resources */,
 				C629EBE01CB68F020008240C /* Login_MsgBg.png in Resources */,
@@ -1282,6 +1295,7 @@
 				C62D04C11C911D85004F4595 /* DFTextImageUserLineCell.m in Sources */,
 				C62D04BE1C911D85004F4595 /* DFLikeCommentView.m in Sources */,
 				C62D04A01C911D85004F4595 /* DFUserLineCellAdapterManager.m in Sources */,
+				C6C2DF131CC513C8001FF73B /* Baby_BabyMessageView.m in Sources */,
 				C62D049C1C911D85004F4595 /* DFLineCellAdapterManager.m in Sources */,
 				C62D04B81C911D85004F4595 /* CommentInputView.m in Sources */,
 				C6A2065A1CBA935900A92EE6 /* Baby_BabyInfoView.m in Sources */,

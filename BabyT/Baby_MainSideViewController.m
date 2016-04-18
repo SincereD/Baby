@@ -18,6 +18,11 @@
 
 @implementation Baby_MainSideViewController
 
+- (void)dealloc
+{
+    [_infoView removeObserver:self forKeyPath:@"selectedType"];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

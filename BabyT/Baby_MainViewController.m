@@ -12,11 +12,13 @@
 #import "Baby_MainSideViewController.h"
 
 #import "Baby_AdvertiseView.h"
+#import "Baby_BabyMessageView.h"
 
 @interface Baby_MainViewController ()
 {
     Baby_MainSideViewController * _sideVC;
     Baby_AdvertiseView * _advertiseView;
+    Baby_BabyMessageView * _messageView;
 }
 @end
 
@@ -42,6 +44,7 @@
     [self initSences];
     [self setNavStyle];
     [self initAdvertise];
+    [self initMessageView];
 }
 
 - (void)initSences
@@ -56,6 +59,12 @@
 {
     _advertiseView = [[Baby_AdvertiseView alloc] init];
     [self.view addSubview:_advertiseView];
+}
+
+- (void)initMessageView
+{
+    _messageView = [[Baby_BabyMessageView alloc] initWithState:BabyStatePrepare];
+    [self.view addSubview:_messageView];
 }
 
 /**

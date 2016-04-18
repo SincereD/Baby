@@ -8,6 +8,9 @@
 
 #import "Baby_BabyInfoView.h"
 
+/**
+ *  侧边栏宝贝信息
+ */
 @interface Baby_BabyInfoView ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong)UIView      * headerView;
