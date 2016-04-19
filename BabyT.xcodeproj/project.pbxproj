@@ -67,6 +67,10 @@
 		C62D04D01C912167004F4595 /* Baby_ToolBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62D04CF1C912167004F4595 /* Baby_ToolBoxViewController.m */; };
 		C63533231CC51B8200D5AA60 /* 婴儿状态@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C63533221CC51B8200D5AA60 /* 婴儿状态@2x.png */; };
 		C63533251CC51B9D00D5AA60 /* 怀孕状态@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C63533241CC51B9D00D5AA60 /* 怀孕状态@2x.png */; };
+		C63533CD1CC66AD300D5AA60 /* Baby_MainNotificationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C63533CB1CC66AD300D5AA60 /* Baby_MainNotificationTableViewCell.m */; };
+		C63533CE1CC66AD300D5AA60 /* Baby_MainNotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63533CC1CC66AD300D5AA60 /* Baby_MainNotificationTableViewCell.xib */; };
+		C63533D11CC66AF300D5AA60 /* Baby_MainNotificationData.m in Sources */ = {isa = PBXBuildFile; fileRef = C63533D01CC66AF300D5AA60 /* Baby_MainNotificationData.m */; };
+		C63533D31CC67B8D00D5AA60 /* 临时资源.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C63533D21CC67B8D00D5AA60 /* 临时资源.jpg */; };
 		C638C2441CB54494000B452C /* Reset_Bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C638C2411CB54494000B452C /* Reset_Bg.png */; };
 		C638C2451CB54494000B452C /* Reset_Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = C638C2421CB54494000B452C /* Reset_Btn.png */; };
 		C638C2461CB54494000B452C /* Reset_Next.png in Resources */ = {isa = PBXBuildFile; fileRef = C638C2431CB54494000B452C /* Reset_Next.png */; };
@@ -86,6 +90,7 @@
 		C63B58161CAABDD500CF4197 /* Baby_FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63B58151CAABDD500CF4197 /* Baby_FindViewController.m */; };
 		C63B581B1CAD55F600CF4197 /* Baby_ResetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63B58191CAD55F600CF4197 /* Baby_ResetViewController.m */; };
 		C63B581C1CAD55F600CF4197 /* Baby_ResetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63B581A1CAD55F600CF4197 /* Baby_ResetViewController.xib */; };
+		C64349751CC67F8C0036B23D /* Baby_MainTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C64349741CC67F8C0036B23D /* Baby_MainTableHeader.m */; };
 		C64385181C8BD71200A05E53 /* Baby_BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C64385171C8BD71200A05E53 /* Baby_BaseViewController.m */; };
 		C643851E1C8BDA6200A05E53 /* Baby_MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C643851D1C8BDA6200A05E53 /* Baby_MainViewController.m */; };
 		C64385211C8BDA8900A05E53 /* Baby_KnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C64385201C8BDA8900A05E53 /* Baby_KnowledgeViewController.m */; };
@@ -257,6 +262,12 @@
 		C62D04CF1C912167004F4595 /* Baby_ToolBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_ToolBoxViewController.m; sourceTree = "<group>"; };
 		C63533221CC51B8200D5AA60 /* 婴儿状态@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "婴儿状态@2x.png"; sourceTree = "<group>"; };
 		C63533241CC51B9D00D5AA60 /* 怀孕状态@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "怀孕状态@2x.png"; sourceTree = "<group>"; };
+		C63533CA1CC66AD300D5AA60 /* Baby_MainNotificationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_MainNotificationTableViewCell.h; sourceTree = "<group>"; };
+		C63533CB1CC66AD300D5AA60 /* Baby_MainNotificationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_MainNotificationTableViewCell.m; sourceTree = "<group>"; };
+		C63533CC1CC66AD300D5AA60 /* Baby_MainNotificationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Baby_MainNotificationTableViewCell.xib; sourceTree = "<group>"; };
+		C63533CF1CC66AF300D5AA60 /* Baby_MainNotificationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_MainNotificationData.h; sourceTree = "<group>"; };
+		C63533D01CC66AF300D5AA60 /* Baby_MainNotificationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_MainNotificationData.m; sourceTree = "<group>"; };
+		C63533D21CC67B8D00D5AA60 /* 临时资源.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "临时资源.jpg"; sourceTree = "<group>"; };
 		C638C2411CB54494000B452C /* Reset_Bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reset_Bg.png; sourceTree = "<group>"; };
 		C638C2421CB54494000B452C /* Reset_Btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reset_Btn.png; sourceTree = "<group>"; };
 		C638C2431CB54494000B452C /* Reset_Next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reset_Next.png; sourceTree = "<group>"; };
@@ -278,6 +289,8 @@
 		C63B58181CAD55F600CF4197 /* Baby_ResetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_ResetViewController.h; sourceTree = "<group>"; };
 		C63B58191CAD55F600CF4197 /* Baby_ResetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_ResetViewController.m; sourceTree = "<group>"; };
 		C63B581A1CAD55F600CF4197 /* Baby_ResetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Baby_ResetViewController.xib; sourceTree = "<group>"; };
+		C64349731CC67F8C0036B23D /* Baby_MainTableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_MainTableHeader.h; sourceTree = "<group>"; };
+		C64349741CC67F8C0036B23D /* Baby_MainTableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_MainTableHeader.m; sourceTree = "<group>"; };
 		C64385161C8BD71200A05E53 /* Baby_BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_BaseViewController.h; sourceTree = "<group>"; };
 		C64385171C8BD71200A05E53 /* Baby_BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_BaseViewController.m; sourceTree = "<group>"; };
 		C643851C1C8BDA6200A05E53 /* Baby_MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_MainViewController.h; sourceTree = "<group>"; };
@@ -950,6 +963,11 @@
 				C6C2DF121CC513C8001FF73B /* Baby_BabyMessageView.m */,
 				C6A2065B1CBA938800A92EE6 /* Baby_AdvertiseView.h */,
 				C6A2065C1CBA938800A92EE6 /* Baby_AdvertiseView.m */,
+				C64349731CC67F8C0036B23D /* Baby_MainTableHeader.h */,
+				C64349741CC67F8C0036B23D /* Baby_MainTableHeader.m */,
+				C63533CA1CC66AD300D5AA60 /* Baby_MainNotificationTableViewCell.h */,
+				C63533CB1CC66AD300D5AA60 /* Baby_MainNotificationTableViewCell.m */,
+				C63533CC1CC66AD300D5AA60 /* Baby_MainNotificationTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -972,6 +990,8 @@
 		C6A206571CBA932600A92EE6 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C63533CF1CC66AF300D5AA60 /* Baby_MainNotificationData.h */,
+				C63533D01CC66AF300D5AA60 /* Baby_MainNotificationData.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -979,6 +999,7 @@
 		C6D9E7451CC22EBD00E18152 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C63533D21CC67B8D00D5AA60 /* 临时资源.jpg */,
 				C6D9E7461CC22EEB00E18152 /* 宝宝头像@2x.png */,
 				C6D9E7481CC22EF100E18152 /* 产检时间表@2x.png */,
 				C6D9E74A1CC22EF700E18152 /* 食谱@2x.png */,
@@ -1124,6 +1145,7 @@
 				C667312E1CC32F8D00BAB5BB /* 关于我们@2x.png in Resources */,
 				C638C2611CB556CE000B452C /* Register_Pwd.png in Resources */,
 				C638C2621CB556CE000B452C /* Register_RePwd.png in Resources */,
+				C63533D31CC67B8D00D5AA60 /* 临时资源.jpg in Resources */,
 				C62D04AB1C911D85004F4595 /* AlbumComment@2x.png in Resources */,
 				C66731211CC32CA900BAB5BB /* bar_MeDefault@2x.png in Resources */,
 				C6D9E74B1CC22EF700E18152 /* 食谱@2x.png in Resources */,
@@ -1177,6 +1199,7 @@
 				C6D9E76C1CC2708400E18152 /* 参考车呢消息.png in Resources */,
 				C62D04B21C911D85004F4595 /* AlbumOperateMoreHL@3x.png in Resources */,
 				C66731301CC32FB600BAB5BB /* 宝贝信息@2x.png in Resources */,
+				C63533CE1CC66AD300D5AA60 /* Baby_MainNotificationTableViewCell.xib in Resources */,
 				C6082EFD1C88464B00E01669 /* Main.storyboard in Resources */,
 				C6A1E6A41CA17B2300676BB9 /* Bubble_red.png in Resources */,
 				C638C2441CB54494000B452C /* Reset_Bg.png in Resources */,
@@ -1259,6 +1282,7 @@
 				C62D04CA1C911E39004F4595 /* Baby_TimeLineViewController.m in Sources */,
 				C63B581B1CAD55F600CF4197 /* Baby_ResetViewController.m in Sources */,
 				C64385211C8BDA8900A05E53 /* Baby_KnowledgeViewController.m in Sources */,
+				C64349751CC67F8C0036B23D /* Baby_MainTableHeader.m in Sources */,
 				C643852F1C8DBB6300A05E53 /* Baby_BaseImplentionVC.m in Sources */,
 				C62D04BC1C911D85004F4595 /* DFTextImageLineCell.m in Sources */,
 				C6FA36DA1CBD2F0000B25C03 /* Baby_SideViewController.m in Sources */,
@@ -1282,6 +1306,7 @@
 				C643851E1C8BDA6200A05E53 /* Baby_MainViewController.m in Sources */,
 				C64385181C8BD71200A05E53 /* Baby_BaseViewController.m in Sources */,
 				C62D04A31C911D85004F4595 /* DFUserTimeLineViewController.m in Sources */,
+				C63533D11CC66AF300D5AA60 /* Baby_MainNotificationData.m in Sources */,
 				C62D04AA1C911D85004F4595 /* DFFaceManager.m in Sources */,
 				C6A206531CBA910B00A92EE6 /* Baby_MainSideViewController.m in Sources */,
 				C62D04A81C911D85004F4595 /* DFBaseUserLineItem.m in Sources */,
@@ -1290,6 +1315,7 @@
 				C62D04A41C911D85004F4595 /* DFBaseLineItem.m in Sources */,
 				C62D04B91C911D85004F4595 /* DFBaseLineCell.m in Sources */,
 				C6A206491CBA7E7300A92EE6 /* Baby_BabyDuring.m in Sources */,
+				C63533CD1CC66AD300D5AA60 /* Baby_MainNotificationTableViewCell.m in Sources */,
 				C6082EF41C88464B00E01669 /* main.m in Sources */,
 				C6A1E6B11CA17F7A00676BB9 /* Baby_LoginViewController.m in Sources */,
 				C62D04C11C911D85004F4595 /* DFTextImageUserLineCell.m in Sources */,

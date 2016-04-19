@@ -13,12 +13,15 @@
 
 #import "Baby_AdvertiseView.h"
 #import "Baby_BabyMessageView.h"
+#import "Baby_MainTableHeader.h"
+#import "Baby_MainNotificationTableViewCell.h"
 
-@interface Baby_MainViewController ()
+@interface Baby_MainViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     Baby_MainSideViewController * _sideVC;
     Baby_AdvertiseView * _advertiseView;
     Baby_BabyMessageView * _messageView;
+    UITableView * _notificationTableView;
 }
 @end
 
@@ -45,11 +48,12 @@
     [self setNavStyle];
     [self initAdvertise];
     [self initMessageView];
+    [self initNotificationTable];
 }
 
 - (void)initSences
 {
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor colorWithRed:238.0f/255.0f green:238.0f/255.0f blue:238.0f/255.0f alpha:1.0f];
 }
 
 /**
@@ -61,11 +65,73 @@
     [self.view addSubview:_advertiseView];
 }
 
+/**
+ *  创建宝宝信息页面
+ */
 - (void)initMessageView
 {
     _messageView = [[Baby_BabyMessageView alloc] initWithState:BabyStatePrepare];
     [self.view addSubview:_messageView];
 }
+
+/**
+ *  创建推送信息表单
+ */
+- (void)initNotificationTable
+{
+    UIView * edgeView = [[UIView alloc] initWithFrame:CGRectMake(5.0f, CGRectGetMaxY(_messageView.frame)+5.0f, ScreenWidth-10.0f, ScreenHeight-CGRectGetMaxY(_messageView.frame)-5.0f-49.0f)];
+    [edgeView setBackgroundColor:[UIColor whiteColor]];
+    [edgeView.layer setCornerRadius:10.0f];
+    [self.view addSubview:edgeView];
+    
+    _notificationTableView = [[UITableView alloc] initWithFrame:CGRectMake(2, 2, CGRectGetWidth(edgeView.frame)-4, CGRectGetHeight(edgeView.frame)-2) style:UITableViewStylePlain];
+    [_notificationTableView setShowsVerticalScrollIndicator:NO];
+    [_notificationTableView setShowsHorizontalScrollIndicator:NO];
+    [_notificationTableView setDelegate:self];
+    [_notificationTableView setDataSource:self];
+    [edgeView addSubview:_notificationTableView];
+}
+
+# pragma mark - UItabelViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 30.0f;
+}
+
+- (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    return [[Baby_MainTableHeader alloc] init];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 130.0f;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+# pragma mark _ UItableViewDataSource
+
+- (Baby_MainNotificationTableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Baby_MainNotificationTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"NotificationCell"];
+    if (!cell)
+    {
+        NSArray *nibs = [[NSBundle mainBundle]loadNibNamed:@"Baby_MainNotificationTableViewCell" owner:nil options:nil];
+        cell = [nibs lastObject];
+    }
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 3;
+}
+
 
 /**
  *  设置导航栏样式
