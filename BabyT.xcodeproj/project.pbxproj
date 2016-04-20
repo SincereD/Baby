@@ -91,6 +91,7 @@
 		C63B581B1CAD55F600CF4197 /* Baby_ResetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63B58191CAD55F600CF4197 /* Baby_ResetViewController.m */; };
 		C63B581C1CAD55F600CF4197 /* Baby_ResetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63B581A1CAD55F600CF4197 /* Baby_ResetViewController.xib */; };
 		C64349751CC67F8C0036B23D /* Baby_MainTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C64349741CC67F8C0036B23D /* Baby_MainTableHeader.m */; };
+		C64349791CC7CECA0036B23D /* Baby_User.m in Sources */ = {isa = PBXBuildFile; fileRef = C64349781CC7CECA0036B23D /* Baby_User.m */; };
 		C64385181C8BD71200A05E53 /* Baby_BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C64385171C8BD71200A05E53 /* Baby_BaseViewController.m */; };
 		C643851E1C8BDA6200A05E53 /* Baby_MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C643851D1C8BDA6200A05E53 /* Baby_MainViewController.m */; };
 		C64385211C8BDA8900A05E53 /* Baby_KnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C64385201C8BDA8900A05E53 /* Baby_KnowledgeViewController.m */; };
@@ -291,6 +292,8 @@
 		C63B581A1CAD55F600CF4197 /* Baby_ResetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Baby_ResetViewController.xib; sourceTree = "<group>"; };
 		C64349731CC67F8C0036B23D /* Baby_MainTableHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_MainTableHeader.h; sourceTree = "<group>"; };
 		C64349741CC67F8C0036B23D /* Baby_MainTableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_MainTableHeader.m; sourceTree = "<group>"; };
+		C64349771CC7CECA0036B23D /* Baby_User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_User.h; sourceTree = "<group>"; };
+		C64349781CC7CECA0036B23D /* Baby_User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_User.m; sourceTree = "<group>"; };
 		C64385161C8BD71200A05E53 /* Baby_BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_BaseViewController.h; sourceTree = "<group>"; };
 		C64385171C8BD71200A05E53 /* Baby_BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_BaseViewController.m; sourceTree = "<group>"; };
 		C643851C1C8BDA6200A05E53 /* Baby_MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_MainViewController.h; sourceTree = "<group>"; };
@@ -773,6 +776,15 @@
 			name = ResetPwd;
 			sourceTree = "<group>";
 		};
+		C64349761CC7CEB30036B23D /* User */ = {
+			isa = PBXGroup;
+			children = (
+				C64349771CC7CECA0036B23D /* Baby_User.h */,
+				C64349781CC7CECA0036B23D /* Baby_User.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
 		C64385281C8BDAED00A05E53 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -887,6 +899,7 @@
 		C6A1E6AD1CA17F4800676BB9 /* Login&Register */ = {
 			isa = PBXGroup;
 			children = (
+				C64349761CC7CEB30036B23D /* User */,
 				C6A0B0031CB9323C0059755B /* BabyInfo */,
 				C629EBCC1CB68D0E0008240C /* MsgEnter */,
 				C629EBCB1CB68D020008240C /* PwdEnter */,
@@ -1296,6 +1309,7 @@
 				C62D04C01C911D85004F4595 /* DFBaseUserLineCell.m in Sources */,
 				C62D04C41C911D93004F4595 /* UserTimelineViewController.m in Sources */,
 				C6A2065D1CBA938800A92EE6 /* Baby_AdvertiseView.m in Sources */,
+				C64349791CC7CECA0036B23D /* Baby_User.m in Sources */,
 				C64385241C8BDAB400A05E53 /* Baby_ExploreViewController.m in Sources */,
 				C6D9E7551CC26E6E00E18152 /* Baby_ActivityViewController.m in Sources */,
 				C64385271C8BDADD00A05E53 /* Baby_PersonalInfoViewController.m in Sources */,
