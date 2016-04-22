@@ -92,6 +92,7 @@
 		C63B581C1CAD55F600CF4197 /* Baby_ResetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63B581A1CAD55F600CF4197 /* Baby_ResetViewController.xib */; };
 		C64349751CC67F8C0036B23D /* Baby_MainTableHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C64349741CC67F8C0036B23D /* Baby_MainTableHeader.m */; };
 		C64349791CC7CECA0036B23D /* Baby_User.m in Sources */ = {isa = PBXBuildFile; fileRef = C64349781CC7CECA0036B23D /* Baby_User.m */; };
+		C643497F1CCA12AA0036B23D /* Baby_ArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C643497E1CCA12AA0036B23D /* Baby_ArticleViewController.m */; };
 		C64385181C8BD71200A05E53 /* Baby_BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C64385171C8BD71200A05E53 /* Baby_BaseViewController.m */; };
 		C643851E1C8BDA6200A05E53 /* Baby_MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C643851D1C8BDA6200A05E53 /* Baby_MainViewController.m */; };
 		C64385211C8BDA8900A05E53 /* Baby_KnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C64385201C8BDA8900A05E53 /* Baby_KnowledgeViewController.m */; };
@@ -294,6 +295,8 @@
 		C64349741CC67F8C0036B23D /* Baby_MainTableHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_MainTableHeader.m; sourceTree = "<group>"; };
 		C64349771CC7CECA0036B23D /* Baby_User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_User.h; sourceTree = "<group>"; };
 		C64349781CC7CECA0036B23D /* Baby_User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_User.m; sourceTree = "<group>"; };
+		C643497D1CCA12AA0036B23D /* Baby_ArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_ArticleViewController.h; sourceTree = "<group>"; };
+		C643497E1CCA12AA0036B23D /* Baby_ArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_ArticleViewController.m; sourceTree = "<group>"; };
 		C64385161C8BD71200A05E53 /* Baby_BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_BaseViewController.h; sourceTree = "<group>"; };
 		C64385171C8BD71200A05E53 /* Baby_BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_BaseViewController.m; sourceTree = "<group>"; };
 		C643851C1C8BDA6200A05E53 /* Baby_MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_MainViewController.h; sourceTree = "<group>"; };
@@ -801,6 +804,8 @@
 			children = (
 				C643851F1C8BDA8900A05E53 /* Baby_KnowledgeViewController.h */,
 				C64385201C8BDA8900A05E53 /* Baby_KnowledgeViewController.m */,
+				C643497D1CCA12AA0036B23D /* Baby_ArticleViewController.h */,
+				C643497E1CCA12AA0036B23D /* Baby_ArticleViewController.m */,
 			);
 			name = Knowledge;
 			sourceTree = "<group>";
@@ -1312,6 +1317,7 @@
 				C64349791CC7CECA0036B23D /* Baby_User.m in Sources */,
 				C64385241C8BDAB400A05E53 /* Baby_ExploreViewController.m in Sources */,
 				C6D9E7551CC26E6E00E18152 /* Baby_ActivityViewController.m in Sources */,
+				C643497F1CCA12AA0036B23D /* Baby_ArticleViewController.m in Sources */,
 				C64385271C8BDADD00A05E53 /* Baby_PersonalInfoViewController.m in Sources */,
 				C62D04A51C911D85004F4595 /* DFTextImageLineItem.m in Sources */,
 				C6A2063B1CBA7DB000A92EE6 /* Baby_BabySubInfoViewController.m in Sources */,
