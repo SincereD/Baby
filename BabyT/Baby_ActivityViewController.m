@@ -17,6 +17,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self initSences];
+}
+
+- (void)initSences
+{
+    [self.view setBackgroundColor:[UIColor whiteColor]];
 }
 
 @end

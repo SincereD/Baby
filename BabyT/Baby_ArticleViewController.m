@@ -17,13 +17,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.navigationItem setLeftBarButtonItems:[self rightItems] animated:YES];
+    [self.navigationItem setRightBarButtonItems:[self rightItems] animated:YES];
+    [self.view setBackgroundColor:[UIColor whiteColor]];
 }
 
 - (NSArray*)rightItems
 {
-    UIBarButtonItem * saveItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(save)];
-    UIBarButtonItem * shareItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(share)];
+ 
+    UIButton * saveBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [saveBtn setFrame:CGRectMake(0, 0, 20, 20)];
+    [saveBtn setBackgroundImage:[UIImage imageNamed:@"文章收藏.png"] forState:UIControlStateNormal];
+    [saveBtn addTarget:self action:@selector(save) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton * shareBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [shareBtn setFrame:CGRectMake(0, 0, 20, 20)];
+    [shareBtn setBackgroundImage:[UIImage imageNamed:@"文章分享.png"] forState:UIControlStateNormal];
+    [shareBtn addTarget:self action:@selector(share) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem * saveItem = [[UIBarButtonItem alloc] initWithCustomView:saveBtn];
+    UIBarButtonItem * shareItem = [[UIBarButtonItem alloc] initWithCustomView:shareBtn];
     return @[saveItem,shareItem];
 }
 

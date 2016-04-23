@@ -8,6 +8,8 @@
 
 #import "Baby_MainSideViewController.h"
 
+#import "Baby_ActivityViewController.h"
+
 #import "Baby_BabyInfoView.h"
 
 @interface Baby_MainSideViewController ()
@@ -47,6 +49,13 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
 {
     NSLog(@"%@",change);
+    [self dissMissView];
+    [self performSelector:@selector(showActivityWithType:) withObject:nil afterDelay:0.35];
+}
+
+- (void)showActivityWithType:(id)type
+{
+    [self .baseVC.navigationController pushViewController:[[Baby_ActivityViewController alloc] init] animated:YES];
 }
 
 @end

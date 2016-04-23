@@ -10,6 +10,7 @@
 
 #import "Baby_BabyInfoViewController.h"
 #import "Baby_MainSideViewController.h"
+#import "Baby_ArticleViewController.h"
 
 #import "Baby_AdvertiseView.h"
 #import "Baby_BabyMessageView.h"
@@ -112,6 +113,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self.navigationController pushViewController:[[Baby_ArticleViewController alloc] init] animated:YES];
 }
 
 # pragma mark _ UItableViewDataSource
