@@ -33,6 +33,11 @@
     [self setTitle:@"选择状态"];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
 /**
  *  屏幕适配
  */

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+///侧边栏信息视图
 @interface Baby_BabyInfoView : UIView
 
 /**

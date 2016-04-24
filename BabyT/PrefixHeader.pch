@@ -13,8 +13,6 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #import <UIKit/UIKit.h>
 
-#import "Baby_LoginViewController.h"
-#import "Baby_RegisterViewController.h"
 #import "Baby_ResetViewController.h"
 #import "Baby_MsgEnterViewController.h"
 

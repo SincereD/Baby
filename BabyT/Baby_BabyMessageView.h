@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+///主页信息视图
 @interface Baby_BabyMessageView : UIView
 
 typedef NS_ENUM(NSInteger, BabyState)

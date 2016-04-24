@@ -68,6 +68,10 @@
 		C633DE581CCB571100E17CC1 /* 文章分享@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C633DE561CCB571100E17CC1 /* 文章分享@2x.png */; };
 		C633DE591CCB571100E17CC1 /* 文章收藏@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C633DE571CCB571100E17CC1 /* 文章收藏@2x.png */; };
 		C633DE5C1CCB5C0300E17CC1 /* Baby_Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = C633DE5B1CCB5C0300E17CC1 /* Baby_Animation.m */; };
+		C633DE621CCC662300E17CC1 /* Baby_PrepareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C633DE611CCC662300E17CC1 /* Baby_PrepareView.m */; };
+		C633DE651CCC663900E17CC1 /* Baby_DuringView.m in Sources */ = {isa = PBXBuildFile; fileRef = C633DE641CCC663900E17CC1 /* Baby_DuringView.m */; };
+		C633DE681CCC664B00E17CC1 /* Baby_FinishedView.m in Sources */ = {isa = PBXBuildFile; fileRef = C633DE671CCC664B00E17CC1 /* Baby_FinishedView.m */; };
+		C633DE6B1CCC668A00E17CC1 /* Baby_InfoFillView.m in Sources */ = {isa = PBXBuildFile; fileRef = C633DE6A1CCC668A00E17CC1 /* Baby_InfoFillView.m */; };
 		C63533231CC51B8200D5AA60 /* 婴儿状态@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C63533221CC51B8200D5AA60 /* 婴儿状态@2x.png */; };
 		C63533251CC51B9D00D5AA60 /* 怀孕状态@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C63533241CC51B9D00D5AA60 /* 怀孕状态@2x.png */; };
 		C63533CD1CC66AD300D5AA60 /* Baby_MainNotificationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C63533CB1CC66AD300D5AA60 /* Baby_MainNotificationTableViewCell.m */; };
@@ -77,19 +81,6 @@
 		C638C2441CB54494000B452C /* Reset_Bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C638C2411CB54494000B452C /* Reset_Bg.png */; };
 		C638C2451CB54494000B452C /* Reset_Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = C638C2421CB54494000B452C /* Reset_Btn.png */; };
 		C638C2461CB54494000B452C /* Reset_Next.png in Resources */ = {isa = PBXBuildFile; fileRef = C638C2431CB54494000B452C /* Reset_Next.png */; };
-		C638C24C1CB54D9C000B452C /* Login_Dotline.png in Resources */ = {isa = PBXBuildFile; fileRef = C638C2491CB54D9C000B452C /* Login_Dotline.png */; };
-		C638C24D1CB54D9C000B452C /* Login_Login.png in Resources */ = {isa = PBXBuildFile; fileRef = C638C24A1CB54D9C000B452C /* Login_Login.png */; };
-		C638C24E1CB54D9C000B452C /* Login_Register.png in Resources */ = {isa = PBXBuildFile; fileRef = C638C24B1CB54D9C000B452C /* Login_Register.png */; };
-		C638C25A1CB556CE000B452C /* BackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C638C2501CB556CE000B452C /* BackArrow.png */; };
-		C638C25B1CB556CE000B452C /* Register_Box.png in Resources */ = {isa = PBXBuildFile; fileRef = C638C2511CB556CE000B452C /* Register_Box.png */; };
-		C638C25C1CB556CE000B452C /* Register_Completed.png in Resources */ = {isa = PBXBuildFile; fileRef = C638C2521CB556CE000B452C /* Register_Completed.png */; };
-		C638C25D1CB556CE000B452C /* Register_Msg.png in Resources */ = {isa = PBXBuildFile; fileRef = C638C2531CB556CE000B452C /* Register_Msg.png */; };
-		C638C25E1CB556CE000B452C /* Register_MsgBox.png in Resources */ = {isa = PBXBuildFile; fileRef = C638C2541CB556CE000B452C /* Register_MsgBox.png */; };
-		C638C25F1CB556CE000B452C /* Register_Name.png in Resources */ = {isa = PBXBuildFile; fileRef = C638C2551CB556CE000B452C /* Register_Name.png */; };
-		C638C2601CB556CE000B452C /* Register_Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = C638C2561CB556CE000B452C /* Register_Phone.png */; };
-		C638C2611CB556CE000B452C /* Register_Pwd.png in Resources */ = {isa = PBXBuildFile; fileRef = C638C2571CB556CE000B452C /* Register_Pwd.png */; };
-		C638C2621CB556CE000B452C /* Register_RePwd.png in Resources */ = {isa = PBXBuildFile; fileRef = C638C2581CB556CE000B452C /* Register_RePwd.png */; };
-		C638C2631CB556CE000B452C /* Register_Tick.png in Resources */ = {isa = PBXBuildFile; fileRef = C638C2591CB556CE000B452C /* Register_Tick.png */; };
 		C63B58161CAABDD500CF4197 /* Baby_FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63B58151CAABDD500CF4197 /* Baby_FindViewController.m */; };
 		C63B581B1CAD55F600CF4197 /* Baby_ResetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63B58191CAD55F600CF4197 /* Baby_ResetViewController.m */; };
 		C63B581C1CAD55F600CF4197 /* Baby_ResetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63B581A1CAD55F600CF4197 /* Baby_ResetViewController.xib */; };
@@ -135,10 +126,6 @@
 		C6A1E6A81CA17B2F00676BB9 /* Bubble_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A1E6A71CA17B2F00676BB9 /* Bubble_orange.png */; };
 		C6A1E6AA1CA17B3500676BB9 /* Bubble_green.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A1E6A91CA17B3500676BB9 /* Bubble_green.png */; };
 		C6A1E6AC1CA17B3B00676BB9 /* Bubble_colors.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A1E6AB1CA17B3B00676BB9 /* Bubble_colors.png */; };
-		C6A1E6B11CA17F7A00676BB9 /* Baby_LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A1E6AF1CA17F7A00676BB9 /* Baby_LoginViewController.m */; };
-		C6A1E6B21CA17F7A00676BB9 /* Baby_LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6A1E6B01CA17F7A00676BB9 /* Baby_LoginViewController.xib */; };
-		C6A1E6B71CA17FA200676BB9 /* Baby_RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A1E6B51CA17FA200676BB9 /* Baby_RegisterViewController.m */; };
-		C6A1E6B81CA17FA200676BB9 /* Baby_RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6A1E6B61CA17FA200676BB9 /* Baby_RegisterViewController.xib */; };
 		C6A2063B1CBA7DB000A92EE6 /* Baby_BabySubInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A206391CBA7DB000A92EE6 /* Baby_BabySubInfoViewController.m */; };
 		C6A2063C1CBA7DB000A92EE6 /* Baby_BabySubInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6A2063A1CBA7DB000A92EE6 /* Baby_BabySubInfoViewController.xib */; };
 		C6A206431CBA7E4900A92EE6 /* Baby_BabyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A206421CBA7E4900A92EE6 /* Baby_BabyModel.m */; };
@@ -269,6 +256,14 @@
 		C633DE571CCB571100E17CC1 /* 文章收藏@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "文章收藏@2x.png"; sourceTree = "<group>"; };
 		C633DE5A1CCB5C0300E17CC1 /* Baby_Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_Animation.h; sourceTree = "<group>"; };
 		C633DE5B1CCB5C0300E17CC1 /* Baby_Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_Animation.m; sourceTree = "<group>"; };
+		C633DE601CCC662300E17CC1 /* Baby_PrepareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_PrepareView.h; sourceTree = "<group>"; };
+		C633DE611CCC662300E17CC1 /* Baby_PrepareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_PrepareView.m; sourceTree = "<group>"; };
+		C633DE631CCC663900E17CC1 /* Baby_DuringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_DuringView.h; sourceTree = "<group>"; };
+		C633DE641CCC663900E17CC1 /* Baby_DuringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_DuringView.m; sourceTree = "<group>"; };
+		C633DE661CCC664B00E17CC1 /* Baby_FinishedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_FinishedView.h; sourceTree = "<group>"; };
+		C633DE671CCC664B00E17CC1 /* Baby_FinishedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_FinishedView.m; sourceTree = "<group>"; };
+		C633DE691CCC668A00E17CC1 /* Baby_InfoFillView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_InfoFillView.h; sourceTree = "<group>"; };
+		C633DE6A1CCC668A00E17CC1 /* Baby_InfoFillView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_InfoFillView.m; sourceTree = "<group>"; };
 		C63533221CC51B8200D5AA60 /* 婴儿状态@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "婴儿状态@2x.png"; sourceTree = "<group>"; };
 		C63533241CC51B9D00D5AA60 /* 怀孕状态@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "怀孕状态@2x.png"; sourceTree = "<group>"; };
 		C63533CA1CC66AD300D5AA60 /* Baby_MainNotificationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_MainNotificationTableViewCell.h; sourceTree = "<group>"; };
@@ -280,19 +275,6 @@
 		C638C2411CB54494000B452C /* Reset_Bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reset_Bg.png; sourceTree = "<group>"; };
 		C638C2421CB54494000B452C /* Reset_Btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reset_Btn.png; sourceTree = "<group>"; };
 		C638C2431CB54494000B452C /* Reset_Next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reset_Next.png; sourceTree = "<group>"; };
-		C638C2491CB54D9C000B452C /* Login_Dotline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login_Dotline.png; sourceTree = "<group>"; };
-		C638C24A1CB54D9C000B452C /* Login_Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login_Login.png; sourceTree = "<group>"; };
-		C638C24B1CB54D9C000B452C /* Login_Register.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login_Register.png; sourceTree = "<group>"; };
-		C638C2501CB556CE000B452C /* BackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackArrow.png; sourceTree = "<group>"; };
-		C638C2511CB556CE000B452C /* Register_Box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Register_Box.png; sourceTree = "<group>"; };
-		C638C2521CB556CE000B452C /* Register_Completed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Register_Completed.png; sourceTree = "<group>"; };
-		C638C2531CB556CE000B452C /* Register_Msg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Register_Msg.png; sourceTree = "<group>"; };
-		C638C2541CB556CE000B452C /* Register_MsgBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Register_MsgBox.png; sourceTree = "<group>"; };
-		C638C2551CB556CE000B452C /* Register_Name.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Register_Name.png; sourceTree = "<group>"; };
-		C638C2561CB556CE000B452C /* Register_Phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Register_Phone.png; sourceTree = "<group>"; };
-		C638C2571CB556CE000B452C /* Register_Pwd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Register_Pwd.png; sourceTree = "<group>"; };
-		C638C2581CB556CE000B452C /* Register_RePwd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Register_RePwd.png; sourceTree = "<group>"; };
-		C638C2591CB556CE000B452C /* Register_Tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Register_Tick.png; sourceTree = "<group>"; };
 		C63B58141CAABDD500CF4197 /* Baby_FindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_FindViewController.h; sourceTree = "<group>"; };
 		C63B58151CAABDD500CF4197 /* Baby_FindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_FindViewController.m; sourceTree = "<group>"; };
 		C63B58181CAD55F600CF4197 /* Baby_ResetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_ResetViewController.h; sourceTree = "<group>"; };
@@ -350,12 +332,6 @@
 		C6A1E6A71CA17B2F00676BB9 /* Bubble_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bubble_orange.png; sourceTree = "<group>"; };
 		C6A1E6A91CA17B3500676BB9 /* Bubble_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bubble_green.png; sourceTree = "<group>"; };
 		C6A1E6AB1CA17B3B00676BB9 /* Bubble_colors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bubble_colors.png; sourceTree = "<group>"; };
-		C6A1E6AE1CA17F7A00676BB9 /* Baby_LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_LoginViewController.h; sourceTree = "<group>"; };
-		C6A1E6AF1CA17F7A00676BB9 /* Baby_LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_LoginViewController.m; sourceTree = "<group>"; };
-		C6A1E6B01CA17F7A00676BB9 /* Baby_LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Baby_LoginViewController.xib; sourceTree = "<group>"; };
-		C6A1E6B41CA17FA200676BB9 /* Baby_RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_RegisterViewController.h; sourceTree = "<group>"; };
-		C6A1E6B51CA17FA200676BB9 /* Baby_RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_RegisterViewController.m; sourceTree = "<group>"; };
-		C6A1E6B61CA17FA200676BB9 /* Baby_RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Baby_RegisterViewController.xib; sourceTree = "<group>"; };
 		C6A206381CBA7DB000A92EE6 /* Baby_BabySubInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_BabySubInfoViewController.h; sourceTree = "<group>"; };
 		C6A206391CBA7DB000A92EE6 /* Baby_BabySubInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_BabySubInfoViewController.m; sourceTree = "<group>"; };
 		C6A2063A1CBA7DB000A92EE6 /* Baby_BabySubInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Baby_BabySubInfoViewController.xib; sourceTree = "<group>"; };
@@ -734,39 +710,37 @@
 			name = Sources;
 			sourceTree = "<group>";
 		};
+		C633DE5D1CCC618A00E17CC1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		C633DE5E1CCC619A00E17CC1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C643851F1C8BDA8900A05E53 /* Baby_KnowledgeViewController.h */,
+				C64385201C8BDA8900A05E53 /* Baby_KnowledgeViewController.m */,
+				C643497D1CCA12AA0036B23D /* Baby_ArticleViewController.h */,
+				C643497E1CCA12AA0036B23D /* Baby_ArticleViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C633DE5F1CCC61AA00E17CC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		C638C2471CB54D70000B452C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				C638C2411CB54494000B452C /* Reset_Bg.png */,
 				C638C2421CB54494000B452C /* Reset_Btn.png */,
 				C638C2431CB54494000B452C /* Reset_Next.png */,
-			);
-			name = Sources;
-			sourceTree = "<group>";
-		};
-		C638C2481CB54D90000B452C /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				C638C2491CB54D9C000B452C /* Login_Dotline.png */,
-				C638C24A1CB54D9C000B452C /* Login_Login.png */,
-				C638C24B1CB54D9C000B452C /* Login_Register.png */,
-			);
-			name = Sources;
-			sourceTree = "<group>";
-		};
-		C638C24F1CB556C3000B452C /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				C638C2501CB556CE000B452C /* BackArrow.png */,
-				C638C2511CB556CE000B452C /* Register_Box.png */,
-				C638C2521CB556CE000B452C /* Register_Completed.png */,
-				C638C2531CB556CE000B452C /* Register_Msg.png */,
-				C638C2541CB556CE000B452C /* Register_MsgBox.png */,
-				C638C2551CB556CE000B452C /* Register_Name.png */,
-				C638C2561CB556CE000B452C /* Register_Phone.png */,
-				C638C2571CB556CE000B452C /* Register_Pwd.png */,
-				C638C2581CB556CE000B452C /* Register_RePwd.png */,
-				C638C2591CB556CE000B452C /* Register_Tick.png */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -814,11 +788,10 @@
 		C64385291C8BDAF500A05E53 /* Knowledge */ = {
 			isa = PBXGroup;
 			children = (
+				C633DE5F1CCC61AA00E17CC1 /* View */,
+				C633DE5E1CCC619A00E17CC1 /* Controller */,
+				C633DE5D1CCC618A00E17CC1 /* Data */,
 				C633DE551CCB56D400E17CC1 /* Sources */,
-				C643851F1C8BDA8900A05E53 /* Baby_KnowledgeViewController.h */,
-				C64385201C8BDA8900A05E53 /* Baby_KnowledgeViewController.m */,
-				C643497D1CCA12AA0036B23D /* Baby_ArticleViewController.h */,
-				C643497E1CCA12AA0036B23D /* Baby_ArticleViewController.m */,
 			);
 			name = Knowledge;
 			sourceTree = "<group>";
@@ -839,9 +812,9 @@
 		C643852B1C8BDB2300A05E53 /* PersonalInfo */ = {
 			isa = PBXGroup;
 			children = (
-				C6D9E7571CC26F5400E18152 /* Sources */,
 				C64385251C8BDADD00A05E53 /* Baby_PersonalInfoViewController.h */,
 				C64385261C8BDADD00A05E53 /* Baby_PersonalInfoViewController.m */,
+				C6D9E7571CC26F5400E18152 /* Sources */,
 				C6D9E7701CC2739C00E18152 /* View */,
 			);
 			name = PersonalInfo;
@@ -928,32 +901,8 @@
 				C629EBCC1CB68D0E0008240C /* MsgEnter */,
 				C629EBCB1CB68D020008240C /* PwdEnter */,
 				C63B58171CAD55C800CF4197 /* ResetPwd */,
-				C6A1E6B91CA17FAD00676BB9 /* Regist */,
-				C6A1E6B31CA17F8300676BB9 /* Login */,
 			);
 			name = "Login&Register";
-			sourceTree = "<group>";
-		};
-		C6A1E6B31CA17F8300676BB9 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				C638C2481CB54D90000B452C /* Sources */,
-				C6A1E6AE1CA17F7A00676BB9 /* Baby_LoginViewController.h */,
-				C6A1E6AF1CA17F7A00676BB9 /* Baby_LoginViewController.m */,
-				C6A1E6B01CA17F7A00676BB9 /* Baby_LoginViewController.xib */,
-			);
-			name = Login;
-			sourceTree = "<group>";
-		};
-		C6A1E6B91CA17FAD00676BB9 /* Regist */ = {
-			isa = PBXGroup;
-			children = (
-				C638C24F1CB556C3000B452C /* Sources */,
-				C6A1E6B41CA17FA200676BB9 /* Baby_RegisterViewController.h */,
-				C6A1E6B51CA17FA200676BB9 /* Baby_RegisterViewController.m */,
-				C6A1E6B61CA17FA200676BB9 /* Baby_RegisterViewController.xib */,
-			);
-			name = Regist;
 			sourceTree = "<group>";
 		};
 		C6A2063D1CBA7DC200A92EE6 /* Controller */ = {
@@ -987,6 +936,14 @@
 		C6A2063F1CBA7DD800A92EE6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C633DE691CCC668A00E17CC1 /* Baby_InfoFillView.h */,
+				C633DE6A1CCC668A00E17CC1 /* Baby_InfoFillView.m */,
+				C633DE601CCC662300E17CC1 /* Baby_PrepareView.h */,
+				C633DE611CCC662300E17CC1 /* Baby_PrepareView.m */,
+				C633DE631CCC663900E17CC1 /* Baby_DuringView.h */,
+				C633DE641CCC663900E17CC1 /* Baby_DuringView.m */,
+				C633DE661CCC664B00E17CC1 /* Baby_FinishedView.h */,
+				C633DE671CCC664B00E17CC1 /* Baby_FinishedView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -1163,7 +1120,6 @@
 				C6A1E6AA1CA17B3500676BB9 /* Bubble_green.png in Resources */,
 				C659C3741CB699D5008F5BBF /* Pwd_Thumb.png in Resources */,
 				C6D9E7471CC22EEB00E18152 /* 宝宝头像@2x.png in Resources */,
-				C638C25D1CB556CE000B452C /* Register_Msg.png in Resources */,
 				C629EBDE1CB68F020008240C /* Login_EnterBtn.png in Resources */,
 				C667311C1CC32CA900BAB5BB /* bar_BookDefault@2x.png in Resources */,
 				C62D04B71C911D85004F4595 /* LikeCmtBg@3x.png in Resources */,
@@ -1172,16 +1128,12 @@
 				C63533231CC51B8200D5AA60 /* 婴儿状态@2x.png in Resources */,
 				C6A0B0161CB933D90059755B /* BabyState_PrepareNormal.png in Resources */,
 				C6D9E7651CC2706E00E18152 /* user@2x.png in Resources */,
-				C638C24E1CB54D9C000B452C /* Login_Register.png in Resources */,
-				C638C25A1CB556CE000B452C /* BackArrow.png in Resources */,
 				C62D04B01C911D85004F4595 /* AlbumOperateMore@3x.png in Resources */,
 				C62D04AF1C911D85004F4595 /* AlbumOperateMore@2x.png in Resources */,
 				C62D04B51C911D85004F4595 /* Like@3x.png in Resources */,
 				C638C2451CB54494000B452C /* Reset_Btn.png in Resources */,
 				C6D9E74D1CC22EFB00E18152 /* 数胎动@2x.png in Resources */,
 				C667312E1CC32F8D00BAB5BB /* 关于我们@2x.png in Resources */,
-				C638C2611CB556CE000B452C /* Register_Pwd.png in Resources */,
-				C638C2621CB556CE000B452C /* Register_RePwd.png in Resources */,
 				C63533D31CC67B8D00D5AA60 /* 临时资源.jpg in Resources */,
 				C62D04AB1C911D85004F4595 /* AlbumComment@2x.png in Resources */,
 				C66731211CC32CA900BAB5BB /* bar_MeDefault@2x.png in Resources */,
@@ -1192,13 +1144,11 @@
 				C6A0B0171CB933D90059755B /* BabyState_PrepareSelected.png in Resources */,
 				C633DE581CCB571100E17CC1 /* 文章分享@2x.png in Resources */,
 				C6A1E6A61CA17B2900676BB9 /* Bubble_purple.png in Resources */,
-				C638C2601CB556CE000B452C /* Register_Phone.png in Resources */,
 				C6A0B0141CB933D90059755B /* BabyState_FinishedSelected.png in Resources */,
 				C667311E1CC32CA900BAB5BB /* bar_ExploreDefault@2x.png in Resources */,
 				C6082F021C88464B00E01669 /* LaunchScreen.storyboard in Resources */,
 				C6A0B0131CB933D90059755B /* BabyState_FinishedNormal.png in Resources */,
 				C62D04AC1C911D85004F4595 /* AlbumComment@3x.png in Resources */,
-				C638C25F1CB556CE000B452C /* Register_Name.png in Resources */,
 				C6A0B0121CB933D90059755B /* BabyState_DuringSelected.png in Resources */,
 				C6D9E7491CC22EF100E18152 /* 产检时间表@2x.png in Resources */,
 				C66731281CC32E7A00BAB5BB /* Explore_Baby@3x.png in Resources */,
@@ -1211,9 +1161,7 @@
 				C66731101CC32ADA00BAB5BB /* 意见反馈@2x.png in Resources */,
 				C66731221CC32CA900BAB5BB /* bar_MeSelected@2x.png in Resources */,
 				C66731141CC32AE400BAB5BB /* 照片管理@2x.png in Resources */,
-				C638C25E1CB556CE000B452C /* Register_MsgBox.png in Resources */,
 				C66731201CC32CA900BAB5BB /* bar_HeartSelected@2x.png in Resources */,
-				C638C2631CB556CE000B452C /* Register_Tick.png in Resources */,
 				C6D9E7511CC22F0300E18152 /* b超@2x.png in Resources */,
 				C629EBD11CB68D2A0008240C /* Baby_MsgEnterViewController.xib in Resources */,
 				C63533251CC51B9D00D5AA60 /* 怀孕状态@2x.png in Resources */,
@@ -1231,9 +1179,7 @@
 				C62D04B11C911D85004F4595 /* AlbumOperateMoreHL@2x.png in Resources */,
 				C629EBE31CB68F020008240C /* Login_TickIcon.png in Resources */,
 				C6082EFF1C88464B00E01669 /* Assets.xcassets in Resources */,
-				C638C24D1CB54D9C000B452C /* Login_Login.png in Resources */,
 				C66731121CC32AE000BAB5BB /* 设置@2x.png in Resources */,
-				C6A1E6B81CA17FA200676BB9 /* Baby_RegisterViewController.xib in Resources */,
 				C6D9E76C1CC2708400E18152 /* 参考车呢消息.png in Resources */,
 				C62D04B21C911D85004F4595 /* AlbumOperateMoreHL@3x.png in Resources */,
 				C66731301CC32FB600BAB5BB /* 宝贝信息@2x.png in Resources */,
@@ -1242,11 +1188,8 @@
 				C6A1E6A41CA17B2300676BB9 /* Bubble_red.png in Resources */,
 				C638C2441CB54494000B452C /* Reset_Bg.png in Resources */,
 				C633DE591CCB571100E17CC1 /* 文章收藏@2x.png in Resources */,
-				C638C24C1CB54D9C000B452C /* Login_Dotline.png in Resources */,
-				C6A1E6B21CA17F7A00676BB9 /* Baby_LoginViewController.xib in Resources */,
 				C62D04B31C911D85004F4595 /* AlbumOperateMoreViewBkg@2x.png in Resources */,
 				C667312C1CC32F0F00BAB5BB /* bar_ExploreSelected@2x.png in Resources */,
-				C638C25C1CB556CE000B452C /* Register_Completed.png in Resources */,
 				C63B581C1CAD55F600CF4197 /* Baby_ResetViewController.xib in Resources */,
 				C6D9E7561CC26E6E00E18152 /* Baby_ActivityViewController.xib in Resources */,
 				C638C2461CB54494000B452C /* Reset_Next.png in Resources */,
@@ -1254,7 +1197,6 @@
 				C6A0B0111CB933D90059755B /* BabyState_DuringNormal.png in Resources */,
 				C629EBDF1CB68F020008240C /* Login_iPhoneIcon.png in Resources */,
 				C6A2064F1CBA883200A92EE6 /* Baby_Main_LeftIcon@2x.png in Resources */,
-				C638C25B1CB556CE000B452C /* Register_Box.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1348,6 +1290,7 @@
 				C633DE5C1CCB5C0300E17CC1 /* Baby_Animation.m in Sources */,
 				C64385181C8BD71200A05E53 /* Baby_BaseViewController.m in Sources */,
 				C62D04A31C911D85004F4595 /* DFUserTimeLineViewController.m in Sources */,
+				C633DE651CCC663900E17CC1 /* Baby_DuringView.m in Sources */,
 				C63533D11CC66AF300D5AA60 /* Baby_MainNotificationData.m in Sources */,
 				C62D04AA1C911D85004F4595 /* DFFaceManager.m in Sources */,
 				C6A206531CBA910B00A92EE6 /* Baby_MainSideViewController.m in Sources */,
@@ -1359,7 +1302,6 @@
 				C6A206491CBA7E7300A92EE6 /* Baby_BabyDuring.m in Sources */,
 				C63533CD1CC66AD300D5AA60 /* Baby_MainNotificationTableViewCell.m in Sources */,
 				C6082EF41C88464B00E01669 /* main.m in Sources */,
-				C6A1E6B11CA17F7A00676BB9 /* Baby_LoginViewController.m in Sources */,
 				C62D04C11C911D85004F4595 /* DFTextImageUserLineCell.m in Sources */,
 				C62D04BE1C911D85004F4595 /* DFLikeCommentView.m in Sources */,
 				C62D04A01C911D85004F4595 /* DFUserLineCellAdapterManager.m in Sources */,
@@ -1368,12 +1310,14 @@
 				C62D04B81C911D85004F4595 /* CommentInputView.m in Sources */,
 				C6A2065A1CBA935900A92EE6 /* Baby_BabyInfoView.m in Sources */,
 				C6A206461CBA7E6500A92EE6 /* Baby_BabyPrepare.m in Sources */,
+				C633DE681CCC664B00E17CC1 /* Baby_FinishedView.m in Sources */,
 				C62D04A91C911D85004F4595 /* DFTextImageUserLineItem.m in Sources */,
+				C633DE6B1CCC668A00E17CC1 /* Baby_InfoFillView.m in Sources */,
 				C6A0B0071CB9325C0059755B /* Baby_BabyInfoViewController.m in Sources */,
 				C62D04A61C911D85004F4595 /* DFLineCommentItem.m in Sources */,
 				C62D04BF1C911D85004F4595 /* MLClickColorLinkLabel.m in Sources */,
+				C633DE621CCC662300E17CC1 /* Baby_PrepareView.m in Sources */,
 				C62D04A11C911D85004F4595 /* DFBaseTimeLineViewController.m in Sources */,
-				C6A1E6B71CA17FA200676BB9 /* Baby_RegisterViewController.m in Sources */,
 				C629EBD01CB68D2A0008240C /* Baby_MsgEnterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

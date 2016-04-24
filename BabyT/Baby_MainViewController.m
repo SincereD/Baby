@@ -34,6 +34,7 @@
     [self setTabbarTitle:@"宝贝"];
     [self setSelectedTabbarColor:[UIColor redColor]];
     [self leftItem];
+    [self.tabBarController.navigationItem setRightBarButtonItems:[self rightItems]];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -50,12 +51,41 @@
     [self initAdvertise];
     [self initMessageView];
     [self initNotificationTable];
+    [self.navigationItem setRightBarButtonItems:[self rightItems]];
 }
 
 - (void)initSences
 {
     self.view.backgroundColor = [UIColor colorWithRed:238.0f/255.0f green:238.0f/255.0f blue:238.0f/255.0f alpha:1.0f];
 }
+- (NSArray*)rightItems
+{
+    
+    UIButton * saveBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [saveBtn setFrame:CGRectMake(0, 0, 20, 20)];
+    [saveBtn setBackgroundImage:[UIImage imageNamed:@"文章收藏.png"] forState:UIControlStateNormal];
+    [saveBtn addTarget:self action:@selector(save) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton * shareBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [shareBtn setFrame:CGRectMake(0, 0, 20, 20)];
+    [shareBtn setBackgroundImage:[UIImage imageNamed:@"文章分享.png"] forState:UIControlStateNormal];
+    [shareBtn addTarget:self action:@selector(share) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem * saveItem = [[UIBarButtonItem alloc] initWithCustomView:saveBtn];
+    UIBarButtonItem * shareItem = [[UIBarButtonItem alloc] initWithCustomView:shareBtn];
+    return @[saveItem,shareItem];
+}
+
+- (void)save
+{
+    [self showBabyInfo:nil];
+}
+
+- (void)share
+{
+    [self showLoginRegisterVC:nil];
+}
+
 
 /**
  *  创建广告页面
