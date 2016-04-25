@@ -38,7 +38,6 @@
 
 - (NSTimeInterval)transitionDuration:(id )transitionContext
 {
-    
     return _transitionDuration;
 }
 
@@ -54,25 +53,21 @@
 
 - (void)animateTransitionEvent
 {
+    [self.containerView addSubview:self.toViewController.view];
     
-    /* == 代码示例 ==
-     
-     UIView *tmpView  = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-     [self.containerView addSubview:self.toViewController.view];
-     [self.containerView addSubview:tmpView];
-     
-     [UIView animateWithDuration:self.transitionDuration
-     delay:0.0f
-     usingSpringWithDamping:1 initialSpringVelocity:0.f options:0 animations:^{
-     
-     tmpView.frame = CGRectMake(0, 0, 100, 100);
-     
-     } completion:^(BOOL finished) {
-     
-     [tmpView removeFromSuperview];
-     [self completeTransition];
-     }];
-     */
+    self.toViewController.view.transform = CGAffineTransformIdentity;
+    self.fromViewController.view.transform = CGAffineTransformIdentity;
+    self.toViewController.view.transform = CGAffineTransformScale(self.toViewController.view.transform, 0.5, 0.5);
+    
+    [UIView animateWithDuration:self.transitionDuration
+                          delay:0.0f
+         usingSpringWithDamping:1 initialSpringVelocity:0.f options:0 animations:^{
+             
+             self.toViewController.view.transform = CGAffineTransformScale(self.toViewController.view.transform, 2.0f, 2.0f);
+             
+         } completion:^(BOOL finished) {
+             [self completeTransition];
+         }];
 }
 
 - (void)completeTransition

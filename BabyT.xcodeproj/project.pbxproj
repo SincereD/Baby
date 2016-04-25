@@ -72,6 +72,8 @@
 		C633DE651CCC663900E17CC1 /* Baby_DuringView.m in Sources */ = {isa = PBXBuildFile; fileRef = C633DE641CCC663900E17CC1 /* Baby_DuringView.m */; };
 		C633DE681CCC664B00E17CC1 /* Baby_FinishedView.m in Sources */ = {isa = PBXBuildFile; fileRef = C633DE671CCC664B00E17CC1 /* Baby_FinishedView.m */; };
 		C633DE6B1CCC668A00E17CC1 /* Baby_InfoFillView.m in Sources */ = {isa = PBXBuildFile; fileRef = C633DE6A1CCC668A00E17CC1 /* Baby_InfoFillView.m */; };
+		C633DE881CCE4CAC00E17CC1 /* Baby_PushAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C633DE871CCE4CAC00E17CC1 /* Baby_PushAnimation.m */; };
+		C633DE8B1CCE4CD500E17CC1 /* Baby_PopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C633DE8A1CCE4CD500E17CC1 /* Baby_PopAnimation.m */; };
 		C63533231CC51B8200D5AA60 /* 婴儿状态@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C63533221CC51B8200D5AA60 /* 婴儿状态@2x.png */; };
 		C63533251CC51B9D00D5AA60 /* 怀孕状态@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C63533241CC51B9D00D5AA60 /* 怀孕状态@2x.png */; };
 		C63533CD1CC66AD300D5AA60 /* Baby_MainNotificationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C63533CB1CC66AD300D5AA60 /* Baby_MainNotificationTableViewCell.m */; };
@@ -264,6 +266,10 @@
 		C633DE671CCC664B00E17CC1 /* Baby_FinishedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_FinishedView.m; sourceTree = "<group>"; };
 		C633DE691CCC668A00E17CC1 /* Baby_InfoFillView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_InfoFillView.h; sourceTree = "<group>"; };
 		C633DE6A1CCC668A00E17CC1 /* Baby_InfoFillView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_InfoFillView.m; sourceTree = "<group>"; };
+		C633DE861CCE4CAC00E17CC1 /* Baby_PushAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_PushAnimation.h; sourceTree = "<group>"; };
+		C633DE871CCE4CAC00E17CC1 /* Baby_PushAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_PushAnimation.m; sourceTree = "<group>"; };
+		C633DE891CCE4CD500E17CC1 /* Baby_PopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_PopAnimation.h; sourceTree = "<group>"; };
+		C633DE8A1CCE4CD500E17CC1 /* Baby_PopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_PopAnimation.m; sourceTree = "<group>"; };
 		C63533221CC51B8200D5AA60 /* 婴儿状态@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "婴儿状态@2x.png"; sourceTree = "<group>"; };
 		C63533241CC51B9D00D5AA60 /* 怀孕状态@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "怀孕状态@2x.png"; sourceTree = "<group>"; };
 		C63533CA1CC66AD300D5AA60 /* Baby_MainNotificationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_MainNotificationTableViewCell.h; sourceTree = "<group>"; };
@@ -832,6 +838,10 @@
 				C6FA36D91CBD2F0000B25C03 /* Baby_SideViewController.m */,
 				C633DE5A1CCB5C0300E17CC1 /* Baby_Animation.h */,
 				C633DE5B1CCB5C0300E17CC1 /* Baby_Animation.m */,
+				C633DE861CCE4CAC00E17CC1 /* Baby_PushAnimation.h */,
+				C633DE871CCE4CAC00E17CC1 /* Baby_PushAnimation.m */,
+				C633DE891CCE4CD500E17CC1 /* Baby_PopAnimation.h */,
+				C633DE8A1CCE4CD500E17CC1 /* Baby_PopAnimation.m */,
 			);
 			name = BaseViewController;
 			sourceTree = "<group>";
@@ -1263,6 +1273,7 @@
 				C62D04CA1C911E39004F4595 /* Baby_TimeLineViewController.m in Sources */,
 				C63B581B1CAD55F600CF4197 /* Baby_ResetViewController.m in Sources */,
 				C64385211C8BDA8900A05E53 /* Baby_KnowledgeViewController.m in Sources */,
+				C633DE8B1CCE4CD500E17CC1 /* Baby_PopAnimation.m in Sources */,
 				C64349751CC67F8C0036B23D /* Baby_MainTableHeader.m in Sources */,
 				C643852F1C8DBB6300A05E53 /* Baby_BaseImplentionVC.m in Sources */,
 				C62D04BC1C911D85004F4595 /* DFTextImageLineCell.m in Sources */,
@@ -1279,6 +1290,7 @@
 				C6A2065D1CBA938800A92EE6 /* Baby_AdvertiseView.m in Sources */,
 				C64349791CC7CECA0036B23D /* Baby_User.m in Sources */,
 				C64385241C8BDAB400A05E53 /* Baby_ExploreViewController.m in Sources */,
+				C633DE881CCE4CAC00E17CC1 /* Baby_PushAnimation.m in Sources */,
 				C6D9E7551CC26E6E00E18152 /* Baby_ActivityViewController.m in Sources */,
 				C643497F1CCA12AA0036B23D /* Baby_ArticleViewController.m in Sources */,
 				C64385271C8BDADD00A05E53 /* Baby_PersonalInfoViewController.m in Sources */,

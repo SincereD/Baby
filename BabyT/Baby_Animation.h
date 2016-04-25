@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Baby_Animation : NSObject
+@interface Baby_Animation : NSObject<UIViewControllerAnimatedTransitioning>
 
 /**
  *  动画执行时间(默认值为0.5s)

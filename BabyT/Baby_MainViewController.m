@@ -12,12 +12,13 @@
 #import "Baby_MainSideViewController.h"
 #import "Baby_ArticleViewController.h"
 
+#import "Baby_Animation.h"
 #import "Baby_AdvertiseView.h"
 #import "Baby_BabyMessageView.h"
 #import "Baby_MainTableHeader.h"
 #import "Baby_MainNotificationTableViewCell.h"
 
-@interface Baby_MainViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface Baby_MainViewController ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
 {
     Baby_MainSideViewController * _sideVC;
     Baby_AdvertiseView * _advertiseView;
@@ -35,6 +36,7 @@
     [self setSelectedTabbarColor:[UIColor redColor]];
     [self leftItem];
     [self.tabBarController.navigationItem setRightBarButtonItems:[self rightItems]];
+    self.navigationController.delegate = self;
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -58,6 +60,7 @@
 {
     self.view.backgroundColor = [UIColor colorWithRed:238.0f/255.0f green:238.0f/255.0f blue:238.0f/255.0f alpha:1.0f];
 }
+
 - (NSArray*)rightItems
 {
     
@@ -162,6 +165,17 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 3;
+}
+
+#pragma mark - 动画代理
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+                                   animationControllerForOperation:(UINavigationControllerOperation)operation
+                                                fromViewController:(UIViewController *)fromVC
+                                                  toViewController:(UIViewController *)toVC
+{
+    
+    Baby_Animation * transition = [[Baby_Animation alloc] init];
+    return transition;
 }
 
 
