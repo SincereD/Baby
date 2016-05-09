@@ -156,6 +156,9 @@
 		C6D9E76F1CC2708400E18152 /* 消息@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6D9E76A1CC2708400E18152 /* 消息@2x.png */; };
 		C6D9E7731CC273BC00E18152 /* Baby_PersonalHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D9E7721CC273BC00E18152 /* Baby_PersonalHeaderView.m */; };
 		C6FA36DA1CBD2F0000B25C03 /* Baby_SideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FA36D91CBD2F0000B25C03 /* Baby_SideViewController.m */; };
+		C6FC77901CE0265100CD68F3 /* Baby_MsgEnterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FC778F1CE0265100CD68F3 /* Baby_MsgEnterRequest.m */; };
+		C6FC77941CE0269A00CD68F3 /* Baby_PwdEnterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FC77931CE0269A00CD68F3 /* Baby_PwdEnterRequest.m */; };
+		C6FC77981CE026E600CD68F3 /* Baby_ReserPwdRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FC77971CE026E600CD68F3 /* Baby_ReserPwdRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -378,6 +381,16 @@
 		C6D9E7721CC273BC00E18152 /* Baby_PersonalHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_PersonalHeaderView.m; sourceTree = "<group>"; };
 		C6FA36D81CBD2F0000B25C03 /* Baby_SideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_SideViewController.h; sourceTree = "<group>"; };
 		C6FA36D91CBD2F0000B25C03 /* Baby_SideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_SideViewController.m; sourceTree = "<group>"; };
+		C6FC778E1CE0265100CD68F3 /* Baby_MsgEnterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_MsgEnterRequest.h; sourceTree = "<group>"; };
+		C6FC778F1CE0265100CD68F3 /* Baby_MsgEnterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_MsgEnterRequest.m; sourceTree = "<group>"; };
+		C6FC77911CE0267A00CD68F3 /* Baby_MsgEnterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_MsgEnterProtocol.h; sourceTree = "<group>"; };
+		C6FC77921CE0269A00CD68F3 /* Baby_PwdEnterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_PwdEnterRequest.h; sourceTree = "<group>"; };
+		C6FC77931CE0269A00CD68F3 /* Baby_PwdEnterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_PwdEnterRequest.m; sourceTree = "<group>"; };
+		C6FC77951CE026C100CD68F3 /* Baby_PwdEnterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_PwdEnterProtocol.h; sourceTree = "<group>"; };
+		C6FC77961CE026E600CD68F3 /* Baby_ReserPwdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_ReserPwdRequest.h; sourceTree = "<group>"; };
+		C6FC77971CE026E600CD68F3 /* Baby_ReserPwdRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_ReserPwdRequest.m; sourceTree = "<group>"; };
+		C6FC77991CE0271000CD68F3 /* Baby_ResetPwdProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_ResetPwdProtocol.h; sourceTree = "<group>"; };
+		C6FC779A1CE0287400CD68F3 /* URLHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLHeader.h; sourceTree = "<group>"; };
 		E2BF55DAEF9A3102F33CAFCA /* Pods-BabyT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabyT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BabyT/Pods-BabyT.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -452,6 +465,7 @@
 				C6082F001C88464B00E01669 /* LaunchScreen.storyboard */,
 				C6082F031C88464B00E01669 /* Info.plist */,
 				C6082EF31C88464B00E01669 /* main.m */,
+				C6FC779A1CE0287400CD68F3 /* URLHeader.h */,
 				C62D04CB1C911F36004F4595 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
@@ -461,6 +475,9 @@
 			isa = PBXGroup;
 			children = (
 				C659C3701CB699C3008F5BBF /* Sources */,
+				C6FC77951CE026C100CD68F3 /* Baby_PwdEnterProtocol.h */,
+				C6FC77921CE0269A00CD68F3 /* Baby_PwdEnterRequest.h */,
+				C6FC77931CE0269A00CD68F3 /* Baby_PwdEnterRequest.m */,
 				C629EBD21CB68D3F0008240C /* Baby_PwdEnterViewController.h */,
 				C629EBD31CB68D3F0008240C /* Baby_PwdEnterViewController.m */,
 				C629EBD41CB68D3F0008240C /* Baby_PwdEnterViewController.xib */,
@@ -475,6 +492,9 @@
 				C629EBCD1CB68D2A0008240C /* Baby_MsgEnterViewController.h */,
 				C629EBCE1CB68D2A0008240C /* Baby_MsgEnterViewController.m */,
 				C629EBCF1CB68D2A0008240C /* Baby_MsgEnterViewController.xib */,
+				C6FC77911CE0267A00CD68F3 /* Baby_MsgEnterProtocol.h */,
+				C6FC778E1CE0265100CD68F3 /* Baby_MsgEnterRequest.h */,
+				C6FC778F1CE0265100CD68F3 /* Baby_MsgEnterRequest.m */,
 			);
 			name = MsgEnter;
 			sourceTree = "<group>";
@@ -764,6 +784,9 @@
 			isa = PBXGroup;
 			children = (
 				C638C2471CB54D70000B452C /* Sources */,
+				C6FC77991CE0271000CD68F3 /* Baby_ResetPwdProtocol.h */,
+				C6FC77961CE026E600CD68F3 /* Baby_ReserPwdRequest.h */,
+				C6FC77971CE026E600CD68F3 /* Baby_ReserPwdRequest.m */,
 				C63B58181CAD55F600CF4197 /* Baby_ResetViewController.h */,
 				C63B58191CAD55F600CF4197 /* Baby_ResetViewController.m */,
 				C63B581A1CAD55F600CF4197 /* Baby_ResetViewController.xib */,
@@ -1282,12 +1305,14 @@
 				C63B58161CAABDD500CF4197 /* Baby_FindViewController.m in Sources */,
 				C62D049E1C911D85004F4595 /* DFBaseUserLineCellAdapter.m in Sources */,
 				C62D04BA1C911D85004F4595 /* DFGridImageView.m in Sources */,
+				C6FC77901CE0265100CD68F3 /* Baby_MsgEnterRequest.m in Sources */,
 				C62D04A21C911D85004F4595 /* DFTimeLineViewController.m in Sources */,
 				C6D9E7731CC273BC00E18152 /* Baby_PersonalHeaderView.m in Sources */,
 				C629EBD51CB68D3F0008240C /* Baby_PwdEnterViewController.m in Sources */,
 				C62D04C01C911D85004F4595 /* DFBaseUserLineCell.m in Sources */,
 				C62D04C41C911D93004F4595 /* UserTimelineViewController.m in Sources */,
 				C6A2065D1CBA938800A92EE6 /* Baby_AdvertiseView.m in Sources */,
+				C6FC77941CE0269A00CD68F3 /* Baby_PwdEnterRequest.m in Sources */,
 				C64349791CC7CECA0036B23D /* Baby_User.m in Sources */,
 				C64385241C8BDAB400A05E53 /* Baby_ExploreViewController.m in Sources */,
 				C633DE881CCE4CAC00E17CC1 /* Baby_PushAnimation.m in Sources */,
@@ -1324,6 +1349,7 @@
 				C6A206461CBA7E6500A92EE6 /* Baby_BabyPrepare.m in Sources */,
 				C633DE681CCC664B00E17CC1 /* Baby_FinishedView.m in Sources */,
 				C62D04A91C911D85004F4595 /* DFTextImageUserLineItem.m in Sources */,
+				C6FC77981CE026E600CD68F3 /* Baby_ReserPwdRequest.m in Sources */,
 				C633DE6B1CCC668A00E17CC1 /* Baby_InfoFillView.m in Sources */,
 				C6A0B0071CB9325C0059755B /* Baby_BabyInfoViewController.m in Sources */,
 				C62D04A61C911D85004F4595 /* DFLineCommentItem.m in Sources */,
