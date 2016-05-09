@@ -4,5 +4,6 @@ pod 'DFCommon'
 pod 'UMengAnalytics-NO-IDFA'
 pod 'UMengSocial'
 pod 'BaiduMapKit'
+pod 'AFSoundManager'
 end
 

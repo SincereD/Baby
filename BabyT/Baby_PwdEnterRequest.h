@@ -12,6 +12,9 @@
 @interface Baby_PwdEnterRequest : NSObject
 
 - (void)loginWithUserName:(NSString*)userName
-                      pwd:(NSString*)pwd;
+                      pwd:(NSString*)pwd
+                 delegate:(id)delegate;
+
+@property (nonatomic,assign) id <Baby_PwdEnterProtocol> delegate;
 
 @end

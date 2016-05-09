@@ -14,6 +14,7 @@
 
 - (void)loginWithUserName:(NSString*)userName
                       pwd:(NSString*)pwd
+                 delegate:(id)delegate;
 {
     NSDictionary *parameters = @{@"username":userName , @"password":pwd};
     

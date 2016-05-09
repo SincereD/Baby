@@ -20,6 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - AFSoundManager (2.1)
   - BaiduMapKit (2.10.2)
   - DFCommon (1.4.1):
     - AFNetworking (~> 2.6.0)
@@ -56,6 +57,7 @@ PODS:
   - YLGIFImage (0.11)
 
 DEPENDENCIES:
+  - AFSoundManager
   - BaiduMapKit
   - DFCommon
   - UMengAnalytics-NO-IDFA
@@ -63,6 +65,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  AFSoundManager: 232af6154e736e6b2d8c93fafebfafd14fad7510
   BaiduMapKit: b1706a062597c70ec62a0cca93212cba1d3017e1
   DFCommon: f384ed3be72d6f067c82413eaeb220413ffedfd8
   FMDB: c1968bab3ab0aed38f66cb778ae1e7fa9a652b6e
@@ -80,6 +83,6 @@ SPEC CHECKSUMS:
   UMengSocial: 48b67179c492a8cf7803fbb0438b8f55432e2fc1
   YLGIFImage: c0ae132fe80e5282b2762a97d14e23ba71a748ae
 
-PODFILE CHECKSUM: 8dbcedfafb7d8916d08c259086e833b8f222bbeb
+PODFILE CHECKSUM: ff65557003e328184e3053a76958906478c0fb6c
 
 COCOAPODS: 1.0.0.beta.5

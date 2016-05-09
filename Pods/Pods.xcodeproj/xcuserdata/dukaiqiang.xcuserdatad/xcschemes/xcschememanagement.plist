@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AFSoundManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>DFCommon.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -107,6 +112,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>378CE985196E32C5E039AFBC38AAD50C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>410B25DF16EA5C5B3E2698F74F9625FB</key>
 		<dict>
 			<key>primary</key>
@@ -137,17 +147,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9B4CCBEFBCB55501A087A0445D5A3B8F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>A29F9CE140D6DF53D141EF82D7C50801</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>CC39E64DEBC3209C0BF6DCD76BE57BEA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DED837A15EEEC7158CEB8DBDE4753008</key>
 		<dict>
 			<key>primary</key>
 			<true/>
