@@ -10,5 +10,7 @@
 
 @interface Baby_MsgEnterRequest : NSObject
 
+- (void)enterWithPwd:(NSString*)userName
+                 pwd:(NSString*)pwd;
 
 @end

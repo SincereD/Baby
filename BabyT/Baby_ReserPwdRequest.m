@@ -10,4 +10,10 @@
 
 @implementation Baby_ReserPwdRequest
 
+- (void)resetPwdWithUserName:(NSString*)userName
+                         msg:(NSString*)msg
+{
+    
+}
+
 @end

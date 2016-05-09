@@ -10,4 +10,10 @@
 
 @implementation Baby_MsgEnterRequest
 
+- (void)enterWithPwd:(NSString*)userName
+                 pwd:(NSString*)pwd
+{
+    
+}
+
 @end

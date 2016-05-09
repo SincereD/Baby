@@ -23,7 +23,9 @@
 
 - (void)setData:(Baby_MainNotificationData*)data
 {
-    
+    [self.titleLab setText:data.article_title];
+    [self.contentLab setText:data.content];
+    [self.typeLab setText:[data type]];
 }
 
 @end

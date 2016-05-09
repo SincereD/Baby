@@ -30,8 +30,6 @@
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     [manager POST:URL.absoluteString parameters:parameters success:^(NSURLSessionTask *task, id responseObject) {
-//        NSLog(@"JSON: %@", responseObject);
-//        NSLog(@"%@",responseObject);
         NSArray * dataArray = [responseObject objectForKey:@"data"];
         for (NSDictionary * d in dataArray)
         {

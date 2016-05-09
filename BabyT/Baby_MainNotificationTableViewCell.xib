@@ -63,6 +63,12 @@
                     <constraint firstItem="EPY-iV-wah" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="yfq-ta-WCP"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLab" destination="EPY-iV-wah" id="LDH-Wm-hQi"/>
+                <outlet property="thumbImageView" destination="Kye-dK-YEH" id="BYa-Sj-nS0"/>
+                <outlet property="titleLab" destination="FBK-Wz-1lq" id="xhd-na-H6E"/>
+                <outlet property="typeLab" destination="bHO-yq-l5b" id="fJc-H6-fqI"/>
+            </connections>
             <point key="canvasLocation" x="240" y="181"/>
         </tableViewCell>
     </objects>

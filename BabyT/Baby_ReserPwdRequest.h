@@ -10,4 +10,7 @@
 
 @interface Baby_ReserPwdRequest : NSObject
 
+- (void)resetPwdWithUserName:(NSString*)userName
+                         msg:(NSString*)msg;
+
 @end

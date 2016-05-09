@@ -14,6 +14,10 @@
  *  主页面信息Cell
  */
 @interface Baby_MainNotificationTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *titleLab;
+@property (weak, nonatomic) IBOutlet UILabel *contentLab;
+@property (weak, nonatomic) IBOutlet UILabel *typeLab;
+@property (weak, nonatomic) IBOutlet UIImageView *thumbImageView;
 
 /**
  *  设置通知Cell属性

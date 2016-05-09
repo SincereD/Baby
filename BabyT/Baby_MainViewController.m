@@ -18,12 +18,17 @@
 #import "Baby_MainTableHeader.h"
 #import "Baby_MainNotificationTableViewCell.h"
 
-@interface Baby_MainViewController ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate>
+#import "Baby_MainNotificationRequest.h"
+
+@interface Baby_MainViewController ()<UITableViewDelegate,UITableViewDataSource,UINavigationControllerDelegate,Baby_MainNotificationProtocol>
 {
     Baby_MainSideViewController * _sideVC;
     Baby_AdvertiseView * _advertiseView;
     Baby_BabyMessageView * _messageView;
     UITableView * _notificationTableView;
+    Baby_MainNotificationRequest * _articleRequest;
+    
+    NSArray * _articleArray;
 }
 @end
 
@@ -54,6 +59,14 @@
     [self initMessageView];
     [self initNotificationTable];
     [self.navigationItem setRightBarButtonItems:[self rightItems]];
+    [self initData];
+    
+}
+
+- (void)initData
+{
+    _articleRequest = [[Baby_MainNotificationRequest alloc] init];
+    [_articleRequest getArticleWithId:@"21684" page:@"1" delegate:self];
 }
 
 - (void)initSences
@@ -113,6 +126,8 @@
  */
 - (void)initNotificationTable
 {
+    _articleArray = [NSArray array];
+    
     UIView * edgeView = [[UIView alloc] initWithFrame:CGRectMake(5.0f, CGRectGetMaxY(_messageView.frame)+5.0f, ScreenWidth-10.0f, ScreenHeight-CGRectGetMaxY(_messageView.frame)-5.0f-49.0f)];
     [edgeView setBackgroundColor:[UIColor whiteColor]];
     [edgeView.layer setCornerRadius:10.0f];
@@ -124,6 +139,19 @@
     [_notificationTableView setDelegate:self];
     [_notificationTableView setDataSource:self];
     [edgeView addSubview:_notificationTableView];
+}
+
+# pragma mark - Baby_MainNotificationProtocol
+
+- (void)notificationDataRequestFail:(id)failError
+{
+    
+}
+
+- (void)notificationDataRequestSuccess:(NSArray *)articles
+{
+    _articleArray = articles;
+    [_notificationTableView reloadData];
 }
 
 # pragma mark - UItabelViewDelegate
@@ -159,12 +187,13 @@
         NSArray *nibs = [[NSBundle mainBundle]loadNibNamed:@"Baby_MainNotificationTableViewCell" owner:nil options:nil];
         cell = [nibs lastObject];
     }
+    [cell setData:_articleArray[indexPath.row]];
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    return _articleArray.count;
 }
 
 #pragma mark - 动画代理

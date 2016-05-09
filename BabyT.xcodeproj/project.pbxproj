@@ -159,6 +159,7 @@
 		C6FC77901CE0265100CD68F3 /* Baby_MsgEnterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FC778F1CE0265100CD68F3 /* Baby_MsgEnterRequest.m */; };
 		C6FC77941CE0269A00CD68F3 /* Baby_PwdEnterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FC77931CE0269A00CD68F3 /* Baby_PwdEnterRequest.m */; };
 		C6FC77981CE026E600CD68F3 /* Baby_ReserPwdRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FC77971CE026E600CD68F3 /* Baby_ReserPwdRequest.m */; };
+		C6FC779D1CE0C17300CD68F3 /* Baby_MainNotificationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FC779C1CE0C17300CD68F3 /* Baby_MainNotificationRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -391,6 +392,9 @@
 		C6FC77971CE026E600CD68F3 /* Baby_ReserPwdRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_ReserPwdRequest.m; sourceTree = "<group>"; };
 		C6FC77991CE0271000CD68F3 /* Baby_ResetPwdProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_ResetPwdProtocol.h; sourceTree = "<group>"; };
 		C6FC779A1CE0287400CD68F3 /* URLHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLHeader.h; sourceTree = "<group>"; };
+		C6FC779B1CE0C17300CD68F3 /* Baby_MainNotificationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_MainNotificationRequest.h; sourceTree = "<group>"; };
+		C6FC779C1CE0C17300CD68F3 /* Baby_MainNotificationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_MainNotificationRequest.m; sourceTree = "<group>"; };
+		C6FC779E1CE0C19900CD68F3 /* Baby_MainNotificationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_MainNotificationProtocol.h; sourceTree = "<group>"; };
 		E2BF55DAEF9A3102F33CAFCA /* Pods-BabyT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabyT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BabyT/Pods-BabyT.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1019,6 +1023,9 @@
 			children = (
 				C63533CF1CC66AF300D5AA60 /* Baby_MainNotificationData.h */,
 				C63533D01CC66AF300D5AA60 /* Baby_MainNotificationData.m */,
+				C6FC779E1CE0C19900CD68F3 /* Baby_MainNotificationProtocol.h */,
+				C6FC779B1CE0C17300CD68F3 /* Baby_MainNotificationRequest.h */,
+				C6FC779C1CE0C17300CD68F3 /* Baby_MainNotificationRequest.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -1341,6 +1348,7 @@
 				C6082EF41C88464B00E01669 /* main.m in Sources */,
 				C62D04C11C911D85004F4595 /* DFTextImageUserLineCell.m in Sources */,
 				C62D04BE1C911D85004F4595 /* DFLikeCommentView.m in Sources */,
+				C6FC779D1CE0C17300CD68F3 /* Baby_MainNotificationRequest.m in Sources */,
 				C62D04A01C911D85004F4595 /* DFUserLineCellAdapterManager.m in Sources */,
 				C6C2DF131CC513C8001FF73B /* Baby_BabyMessageView.m in Sources */,
 				C62D049C1C911D85004F4595 /* DFLineCellAdapterManager.m in Sources */,
