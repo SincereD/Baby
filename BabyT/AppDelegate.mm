@@ -22,49 +22,6 @@
     if (!ret) {
         NSLog(@"百度地图启动失败！！！");
     }
-    
-    NSString *URLString = @"http://120.76.136.195:20165/content/getMp3List";
-    NSDictionary *parameters = @{@"mp3_id":@"1461569824637644126" , @"currentPage":@"1"};
-    
-    NSURL *URL = [NSURL URLWithString:URLString];
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
-    [manager POST:URL.absoluteString parameters:parameters success:^(NSURLSessionTask *task, id responseObject) {
-        NSArray * dataArray = [responseObject objectForKey:@"data"];
-        for (NSDictionary * d in dataArray)
-        {
-            NSString * fileName = [d objectForKey:@"file_name"];
-            NSString * fileUrl = [d objectForKey:@"file_url"];
-            NSString * mp3Id = [d objectForKey:@"mp3_id"];
-            NSString * mp3Name = [d objectForKey:@"mp3_name"];
-            
-            NSLog(@"--------------");
-            NSLog(@"%@",fileName);
-            NSLog(@"%@",[fileUrl stringByRemovingPercentEncoding]);
-            NSLog(@"%@",fileUrl);
-            NSLog(@"%@",mp3Id);
-            NSLog(@"%@",mp3Name);
-            
-//            return;
-//            NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-//            AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
-//            
-//            NSURL *URL = [NSURL URLWithString:[fileUrl stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet characterSetWithCharactersInString:fileUrl]]];
-//            NSURLRequest *request = [NSURLRequest requestWithURL:URL];
-//            
-//            NSURLSessionDownloadTask *downloadTask = [manager downloadTaskWithRequest:request progress:nil destination:^NSURL *(NSURL *targetPath, NSURLResponse *response) {
-//                NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
-//                return [documentsDirectoryURL URLByAppendingPathComponent:[response suggestedFilename]];
-//            } completionHandler:^(NSURLResponse *response, NSURL *filePath, NSError *error) {
-//                NSLog(@"File downloaded to: %@", filePath);
-//            }];
-//            [downloadTask resume];
-
-        }
-    } failure:^(NSURLSessionTask *operation, NSError *error) {
-        NSLog(@"Error: %@", error);
-    }];
-    
     return YES;
 }
 

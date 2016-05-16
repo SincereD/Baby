@@ -113,6 +113,7 @@
 		C667312C1CC32F0F00BAB5BB /* bar_ExploreSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C667312B1CC32F0F00BAB5BB /* bar_ExploreSelected@2x.png */; };
 		C667312E1CC32F8D00BAB5BB /* 关于我们@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C667312D1CC32F8D00BAB5BB /* 关于我们@2x.png */; };
 		C66731301CC32FB600BAB5BB /* 宝贝信息@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C667312F1CC32FB600BAB5BB /* 宝贝信息@2x.png */; };
+		C69F3EB91CE9AEB0000E8F90 /* Baby_ArticleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C69F3EB81CE9AEB0000E8F90 /* Baby_ArticleView.m */; };
 		C6A0B0071CB9325C0059755B /* Baby_BabyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A0B0051CB9325C0059755B /* Baby_BabyInfoViewController.m */; };
 		C6A0B0081CB9325C0059755B /* Baby_BabyInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6A0B0061CB9325C0059755B /* Baby_BabyInfoViewController.xib */; };
 		C6A0B0111CB933D90059755B /* BabyState_DuringNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A0B00A1CB933D90059755B /* BabyState_DuringNormal.png */; };
@@ -326,6 +327,8 @@
 		C667312B1CC32F0F00BAB5BB /* bar_ExploreSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar_ExploreSelected@2x.png"; sourceTree = "<group>"; };
 		C667312D1CC32F8D00BAB5BB /* 关于我们@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "关于我们@2x.png"; sourceTree = "<group>"; };
 		C667312F1CC32FB600BAB5BB /* 宝贝信息@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "宝贝信息@2x.png"; sourceTree = "<group>"; };
+		C69F3EB71CE9AEB0000E8F90 /* Baby_ArticleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_ArticleView.h; sourceTree = "<group>"; };
+		C69F3EB81CE9AEB0000E8F90 /* Baby_ArticleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_ArticleView.m; sourceTree = "<group>"; };
 		C6A0B0041CB9325C0059755B /* Baby_BabyInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_BabyInfoViewController.h; sourceTree = "<group>"; };
 		C6A0B0051CB9325C0059755B /* Baby_BabyInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_BabyInfoViewController.m; sourceTree = "<group>"; };
 		C6A0B0061CB9325C0059755B /* Baby_BabyInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Baby_BabyInfoViewController.xib; sourceTree = "<group>"; };
@@ -453,6 +456,7 @@
 				C64385281C8BDAED00A05E53 /* Main */,
 				C64385291C8BDAF500A05E53 /* Knowledge */,
 				C643852A1C8BDB1700A05E53 /* Explore */,
+				C69F3EBA1CE9B768000E8F90 /* Audio */,
 				C643852B1C8BDB2300A05E53 /* PersonalInfo */,
 				C6082EF21C88464B00E01669 /* Supporting Files */,
 			);
@@ -761,6 +765,8 @@
 		C633DE5F1CCC61AA00E17CC1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C69F3EB71CE9AEB0000E8F90 /* Baby_ArticleView.h */,
+				C69F3EB81CE9AEB0000E8F90 /* Baby_ArticleView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -880,6 +886,13 @@
 				C659C3721CB699D5008F5BBF /* Pwd_Thumb.png */,
 			);
 			name = Sources;
+			sourceTree = "<group>";
+		};
+		C69F3EBA1CE9B768000E8F90 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Audio;
 			sourceTree = "<group>";
 		};
 		C6A0AFFC1CB929A40059755B /* Sources */ = {
@@ -1021,9 +1034,9 @@
 		C6A206571CBA932600A92EE6 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C6FC779E1CE0C19900CD68F3 /* Baby_MainNotificationProtocol.h */,
 				C63533CF1CC66AF300D5AA60 /* Baby_MainNotificationData.h */,
 				C63533D01CC66AF300D5AA60 /* Baby_MainNotificationData.m */,
-				C6FC779E1CE0C19900CD68F3 /* Baby_MainNotificationProtocol.h */,
 				C6FC779B1CE0C17300CD68F3 /* Baby_MainNotificationRequest.h */,
 				C6FC779C1CE0C17300CD68F3 /* Baby_MainNotificationRequest.m */,
 			);
@@ -1316,6 +1329,7 @@
 				C62D04A21C911D85004F4595 /* DFTimeLineViewController.m in Sources */,
 				C6D9E7731CC273BC00E18152 /* Baby_PersonalHeaderView.m in Sources */,
 				C629EBD51CB68D3F0008240C /* Baby_PwdEnterViewController.m in Sources */,
+				C69F3EB91CE9AEB0000E8F90 /* Baby_ArticleView.m in Sources */,
 				C62D04C01C911D85004F4595 /* DFBaseUserLineCell.m in Sources */,
 				C62D04C41C911D93004F4595 /* UserTimelineViewController.m in Sources */,
 				C6A2065D1CBA938800A92EE6 /* Baby_AdvertiseView.m in Sources */,

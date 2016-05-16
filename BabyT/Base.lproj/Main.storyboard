@@ -163,23 +163,6 @@
                     <view key="view" contentMode="scaleToFill" id="uKD-XG-ceH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZL-dG-ioF">
-                                <rect key="frame" x="203" y="133" width="104" height="41"/>
-                                <state key="normal" title="登陆注册"/>
-                                <connections>
-                                    <action selector="showLoginRegisterVC:" destination="WxM-g2-yr9" eventType="touchUpInside" id="7zu-tf-UTO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3l-fH-asv">
-                                <rect key="frame" x="254" y="250" width="66" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="添加信息"/>
-                                <connections>
-                                    <action selector="showBabyInfo:" destination="WxM-g2-yr9" eventType="touchUpInside" id="kcH-Gc-HYu"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="宝贝" image="bar_HeartDefault.png" selectedImage="bar_HeartSelected.png" id="TQr-FB-7On"/>

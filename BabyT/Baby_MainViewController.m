@@ -173,8 +173,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    [self.navigationController pushViewController:[[Baby_ArticleViewController alloc] init] animated:YES];
+    [self.navigationController pushViewController:[[Baby_ArticleViewController alloc] initWithData:_articleArray[indexPath.row]] animated:YES];
 }
 
 # pragma mark _ UItableViewDataSource

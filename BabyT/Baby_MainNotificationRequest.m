@@ -37,8 +37,14 @@
 {
     NSMutableArray * dataArray = [NSMutableArray array];
     
+    int index = 0;
     for (NSDictionary * singleData in responseData)
     {
+        index ++;
+        if (index>3)
+        {
+            break;
+        }
         Baby_MainNotificationData * data = [[Baby_MainNotificationData alloc] initWithJSONData:singleData];
         [dataArray addObject:data];
     }

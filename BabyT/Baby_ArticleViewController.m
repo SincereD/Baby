@@ -8,8 +8,12 @@
 
 #import "Baby_ArticleViewController.h"
 #import "Baby_Animation.h"
+#import "Baby_ArticleView.h"
 
 @interface Baby_ArticleViewController ()<UINavigationControllerDelegate,UIViewControllerTransitioningDelegate>
+{
+    Baby_ArticleView * _articleView;
+}
 
 @property (nonatomic, strong) UIPercentDrivenInteractiveTransition *percentDrivenTransition;
 
@@ -17,13 +21,24 @@
 
 @implementation Baby_ArticleViewController
 
+- (instancetype)initWithData:(Baby_MainNotificationData*)data
+{
+    if (self = [super init])
+    {
+        _data = data;
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
      self.navigationController.delegate = self;
     [self.navigationItem setRightBarButtonItems:[self rightItems] animated:YES];
     [self.view setBackgroundColor:[UIColor whiteColor]];
+    [self setTitle:_data.article_title];
     [self setup];
+    [self initContentView];
 }
 
 - (NSArray*)rightItems
@@ -42,6 +57,12 @@
     UIBarButtonItem * saveItem = [[UIBarButtonItem alloc] initWithCustomView:saveBtn];
     UIBarButtonItem * shareItem = [[UIBarButtonItem alloc] initWithCustomView:shareBtn];
     return @[saveItem,shareItem];
+}
+
+- (void)initContentView
+{
+    _articleView = [[Baby_ArticleView alloc] initWithContent:_data.content];
+    [self.view addSubview:_articleView];
 }
 
 - (void)save

@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "Baby_MainNotificationData.h"
+
 @interface Baby_ArticleViewController : UIViewController
+
+- (instancetype)initWithData:(Baby_MainNotificationData*)data;
+
+@property (nonatomic,strong) Baby_MainNotificationData * data;
 
 @end
