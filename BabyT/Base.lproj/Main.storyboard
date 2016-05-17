@@ -152,6 +152,26 @@
             </objects>
             <point key="canvasLocation" x="-126" y="1148"/>
         </scene>
+        <!--故事-->
+        <scene sceneID="BBL-pc-qnQ">
+            <objects>
+                <viewController id="1Ie-8B-J4C" customClass="Baby_AudioViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uPl-af-YAY"/>
+                        <viewControllerLayoutGuide type="bottom" id="MTu-ad-CmL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U8R-Ne-xKr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="故事" image="bar_HeartDefault.png" selectedImage="bar_HeartSelected.png" id="qJ1-AL-IUj"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dje-fG-KFB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-85" y="-905"/>
+        </scene>
         <!--宝贝-->
         <scene sceneID="X43-hP-FrP">
             <objects>
@@ -209,6 +229,7 @@
                         <segue destination="m23-bk-wyL" kind="relationship" relationship="viewControllers" id="N0h-jI-a4l"/>
                         <segue destination="BPR-2a-9Dd" kind="relationship" relationship="viewControllers" id="Wwi-Oh-FqW"/>
                         <segue destination="uVt-zC-qPv" kind="relationship" relationship="viewControllers" id="vb8-4O-sgh"/>
+                        <segue destination="1Ie-8B-J4C" kind="relationship" relationship="viewControllers" id="6Ik-dh-FML"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QDa-gC-acb" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -41,7 +41,7 @@
     [self setSelectedTabbarColor:[UIColor redColor]];
     [self leftItem];
     [self.tabBarController.navigationItem setRightBarButtonItems:[self rightItems]];
-    self.navigationController.delegate = self;
+//    self.navigationController.delegate = self;
 }
 
 - (void)viewWillDisappear:(BOOL)animated

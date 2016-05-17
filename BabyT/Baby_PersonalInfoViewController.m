@@ -7,6 +7,9 @@
 //
 
 #import "Baby_PersonalInfoViewController.h"
+#import "Baby_TimeLineViewController.h"
+#import "Baby_ToolBoxViewController.h"
+#import "Baby_SuggestionsViewController.h"
 
 @interface Baby_PersonalInfoViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
@@ -26,6 +29,7 @@
 {
     [super viewWillAppear:animated];
     [self hideNavBar];
+    [self setTabbarTitle:@"我的"];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -217,11 +221,21 @@
 {
     if (indexPath.section == 0)
     {
-//        [self.navigationController pushViewController:[Baby_TimeLineViewController new] animated:YES];
-    }else if (indexPath.section == 1)
-    {
-//        [self.navigationController pushViewController:[Baby_ToolBoxViewController new] animated:YES];
+        [self.navigationController pushViewController:[Baby_TimeLineViewController new] animated:YES];
     }
+    else if (indexPath.section == 2)
+    {
+        if (indexPath.row == 0)
+        {
+            [self suggestions];
+        }
+    }
+}
+
+- (void)suggestions
+{
+    [self.navigationController pushViewController:[Baby_SuggestionsViewController new] animated:YES];
+
 }
 
 @end

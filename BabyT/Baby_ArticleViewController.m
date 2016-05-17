@@ -33,7 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-     self.navigationController.delegate = self;
+//     self.navigationController.delegate = self;
     [self.navigationItem setRightBarButtonItems:[self rightItems] animated:YES];
     [self.view setBackgroundColor:[UIColor whiteColor]];
     [self setTitle:_data.article_title];
