@@ -8,7 +8,9 @@
 
 #import "Baby_UserCodeRequest.h"
 
-# define UserCodeURL @"http://120.76.136.195:20165/user/addCode"
+# define UserCodeURL @"http://120.76.136.195:20165/user/findPwd"
+//http://120.76.136.195:20165/user/findPwd
+//addCode
 
 @implementation Baby_UserCodeRequest
 

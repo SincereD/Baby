@@ -33,7 +33,6 @@
 - (IBAction)getUserCodeAction:(id)sender
 {
     Baby_UserCodeRequest * userCodeRequest = [[Baby_UserCodeRequest alloc] init];
-    [userCodeRequest requestUserCodeWithPhoneNumber:@"8613817607646"];
-    
+    [userCodeRequest requestUserCodeWithPhoneNumber:@"13817607646"];
 }
 @end
