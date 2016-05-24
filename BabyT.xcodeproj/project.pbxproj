@@ -164,6 +164,7 @@
 		C6FC77941CE0269A00CD68F3 /* Baby_PwdEnterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FC77931CE0269A00CD68F3 /* Baby_PwdEnterRequest.m */; };
 		C6FC77981CE026E600CD68F3 /* Baby_ReserPwdRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FC77971CE026E600CD68F3 /* Baby_ReserPwdRequest.m */; };
 		C6FC779D1CE0C17300CD68F3 /* Baby_MainNotificationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FC779C1CE0C17300CD68F3 /* Baby_MainNotificationRequest.m */; };
+		C6FF98CD1CF485AD00D2E03A /* Baby_UserCodeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FF98CC1CF485AD00D2E03A /* Baby_UserCodeRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -406,6 +407,8 @@
 		C6FC779B1CE0C17300CD68F3 /* Baby_MainNotificationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_MainNotificationRequest.h; sourceTree = "<group>"; };
 		C6FC779C1CE0C17300CD68F3 /* Baby_MainNotificationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_MainNotificationRequest.m; sourceTree = "<group>"; };
 		C6FC779E1CE0C19900CD68F3 /* Baby_MainNotificationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_MainNotificationProtocol.h; sourceTree = "<group>"; };
+		C6FF98CB1CF485AD00D2E03A /* Baby_UserCodeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Baby_UserCodeRequest.h; sourceTree = "<group>"; };
+		C6FF98CC1CF485AD00D2E03A /* Baby_UserCodeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Baby_UserCodeRequest.m; sourceTree = "<group>"; };
 		E2BF55DAEF9A3102F33CAFCA /* Pods-BabyT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabyT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BabyT/Pods-BabyT.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -967,6 +970,7 @@
 		C6A1E6AD1CA17F4800676BB9 /* Login&Register */ = {
 			isa = PBXGroup;
 			children = (
+				C6FF98CA1CF4858F00D2E03A /* UserCode */,
 				C64349761CC7CEB30036B23D /* User */,
 				C6A0B0031CB9323C0059755B /* BabyInfo */,
 				C629EBCC1CB68D0E0008240C /* MsgEnter */,
@@ -1121,6 +1125,15 @@
 				C667312B1CC32F0F00BAB5BB /* bar_ExploreSelected@2x.png */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		C6FF98CA1CF4858F00D2E03A /* UserCode */ = {
+			isa = PBXGroup;
+			children = (
+				C6FF98CB1CF485AD00D2E03A /* Baby_UserCodeRequest.h */,
+				C6FF98CC1CF485AD00D2E03A /* Baby_UserCodeRequest.m */,
+			);
+			name = UserCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1339,6 +1352,7 @@
 				C63B581B1CAD55F600CF4197 /* Baby_ResetViewController.m in Sources */,
 				C64385211C8BDA8900A05E53 /* Baby_KnowledgeViewController.m in Sources */,
 				C633DE8B1CCE4CD500E17CC1 /* Baby_PopAnimation.m in Sources */,
+				C6FF98CD1CF485AD00D2E03A /* Baby_UserCodeRequest.m in Sources */,
 				C64349751CC67F8C0036B23D /* Baby_MainTableHeader.m in Sources */,
 				C643852F1C8DBB6300A05E53 /* Baby_BaseImplentionVC.m in Sources */,
 				C62D04BC1C911D85004F4595 /* DFTextImageLineCell.m in Sources */,

@@ -10,4 +10,6 @@
 
 @interface Baby_ResetViewController : UIViewController
 
+- (IBAction)getUserCodeAction:(id)sender;
+
 @end

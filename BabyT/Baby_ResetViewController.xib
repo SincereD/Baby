@@ -59,6 +59,9 @@
                     <state key="normal" title="短信验证" backgroundImage="Reset_Btn.png">
                         <color key="titleColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="getUserCodeAction:" destination="-1" eventType="touchUpInside" id="LQo-Ne-LTF"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

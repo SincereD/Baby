@@ -7,6 +7,7 @@
 //
 
 #import "Baby_ResetViewController.h"
+#import "Baby_UserCodeRequest.h"
 
 @interface Baby_ResetViewController ()
 
@@ -29,14 +30,10 @@
     [self.view endEditing:YES];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)getUserCodeAction:(id)sender
+{
+    Baby_UserCodeRequest * userCodeRequest = [[Baby_UserCodeRequest alloc] init];
+    [userCodeRequest requestUserCodeWithPhoneNumber:@"8613817607646"];
+    
 }
-*/
-
 @end

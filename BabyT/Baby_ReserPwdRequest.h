@@ -8,9 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+#import "Baby_ResetPwdProtocol.h"
+
 @interface Baby_ReserPwdRequest : NSObject
 
 - (void)resetPwdWithUserName:(NSString*)userName
                          msg:(NSString*)msg;
+
+@property (nonatomic,assign) id<Baby_ResetPwdProtocol> delegate;
 
 @end
