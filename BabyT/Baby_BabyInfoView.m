@@ -72,7 +72,7 @@
     _cellImageName = @[@"数胎动",@"食谱",@"b超",@"产检时间表",@"天气"];
     _cellTitleName = @[@"数胎动",@"孕期食谱",@"看懂B超单",@"产检时间表",@"天气以及空气质量"];
     
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), _cellTitleName.count*50 + 150) style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, CGRectGetWidth(self.frame), _cellTitleName.count*50 + 150) style:UITableViewStylePlain];
     [_tableView setDelegate:self];
     [_tableView setDataSource:self];
     [_tableView setScrollEnabled:NO];

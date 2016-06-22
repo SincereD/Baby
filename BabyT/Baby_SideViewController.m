@@ -147,8 +147,8 @@
  */
 - (void)show
 {
-    [self.baseVC.navigationController setNavigationBarHidden:YES animated:YES];
-    [self.baseVC.tabBarController.tabBar setHidden:YES];
+//    [self.baseVC.navigationController setNavigationBarHidden:YES animated:YES];
+//    [self.baseVC.tabBarController.tabBar setHidden:YES];
 
     [UIView animateWithDuration:0.5 animations:^{
         _maskView.alpha = 0.5f;
